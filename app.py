@@ -1,13 +1,15 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 import random
 
-st.set_page_config(page_title="Enterprise Sales AI", layout="wide")
+st.set_page_config(page_title="Relationship AI System", layout="wide")
 
 # =========================================================
-# SESSION DATA INIT
+# DATA INIT
 # =========================================================
 if "df" not in st.session_state:
     st.session_state.df = pd.DataFrame()
@@ -17,55 +19,46 @@ df = st.session_state.df
 # =========================================================
 # MASTER DATA
 # =========================================================
-REPS = [
-    "Kevin Ashiundu","Charity","Naomi","Carol","Josephine",
-    "Geoffrey","Jacob","Faith","Erick","Spencer",
-    "Evans","Miriam","Brian"
-]
+REPS = ["Kevin","Charity","Naomi","Carol","Josephine","Geoffrey","Jacob","Faith","Erick","Spencer","Evans","Miriam","Brian"]
 
-HOSPITALS = ["MTRH", "Kijabe", "Nairobi Hospital", "Mombasa Hospital", "Meru Hospital"]
+DOCTORS = ["Dr Achieng","Dr Patel","Dr Kamau","Dr Smith","Dr Njoroge","Dr Otieno"]
 
-REGIONS = ["Eldoret", "Nairobi/Kijabe", "Mombasa", "Meru"]
-
-PROCEDURES = ["Trauma Case", "Arthroplasty Case", "Sports Injury", "Spinal Case"]
+HOSPITALS = ["MTRH","Kijabe","Nairobi Hospital","Mombasa Hospital","Meru Hospital"]
 
 # =========================================================
-# GENERATE 300 TEST RECORDS (IMPORTANT FIX)
+# TEST DATA GENERATION (RELATIONSHIP STRUCTURED)
 # =========================================================
-def generate_test_data(n=300):
+def generate_data(n=300):
     data = []
 
     for _ in range(n):
+        hospital = random.choice(HOSPITALS)
+        doctor = random.choice(DOCTORS)
         rep = random.choice(REPS)
 
         revenue = random.randint(80000, 400000)
         cost = int(revenue * random.uniform(0.5, 0.8))
         profit = revenue - cost
 
-        row = {
+        data.append({
             "Date": datetime.today() - timedelta(days=random.randint(0, 365)),
             "Rep": rep,
-            "Hospital": random.choice(HOSPITALS),
-            "Region": random.choice(REGIONS),
-            "Procedure": random.choice(PROCEDURES),
+            "Doctor": doctor,
+            "Hospital": hospital,
             "Revenue": revenue,
             "Cost": cost,
             "Profit": profit,
-            "Outcome": random.randint(60, 100)
-        }
-
-        data.append(row)
+            "Outcome": random.randint(60,100)
+        })
 
     return pd.DataFrame(data)
 
 # =========================================================
-# PROCESS DATA
+# PROCESSING
 # =========================================================
 def process(df):
     if df.empty:
         return df
-
-    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
     df["Score"] = (
         df["Revenue"] * 0.4 +
@@ -78,158 +71,135 @@ def process(df):
 df = process(df)
 
 # =========================================================
+# FORECAST ENGINE
+# =========================================================
+def forecast(df):
+    if df.empty:
+        return None
+
+    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+    df["Month"] = df["Date"].dt.to_period("M").astype(str)
+
+    monthly = df.groupby("Month")["Revenue"].sum().values
+
+    if len(monthly) < 2:
+        return None
+
+    x = np.arange(len(monthly))
+    slope = np.polyfit(x, monthly, 1)[0]
+
+    return max(monthly[-1] + slope, 0)
+
+# =========================================================
+# RELATIONSHIP GRAPH BUILDER
+# =========================================================
+def build_graph(df):
+    G = nx.Graph()
+
+    if df.empty:
+        return G
+
+    for _, row in df.iterrows():
+        rep = row["Rep"]
+        doctor = row["Doctor"]
+        hospital = row["Hospital"]
+        revenue = row["Revenue"]
+
+        # Nodes
+        G.add_node(rep, type="Rep")
+        G.add_node(doctor, type="Doctor")
+        G.add_node(hospital, type="Hospital")
+
+        # Edges (RELATIONSHIPS)
+        G.add_edge(rep, doctor, weight=revenue)
+        G.add_edge(doctor, hospital, weight=revenue)
+        G.add_edge(rep, hospital, weight=revenue)
+
+    return G
+
+# =========================================================
 # NAVIGATION
 # =========================================================
 page = st.sidebar.radio(
-    "Enterprise System",
-    ["📊 Dashboard","➕ Add Procedure","🧪 Generate Test Data","🤖 AI","💰 Commission"]
+    "AI System",
+    ["📊 Dashboard","🕸️ Network Map","📈 Forecast","🧪 Generate Data"]
 )
 
 # =========================================================
-# 🧪 TEST DATA (FIXED BUTTON)
+# 🧪 GENERATE DATA
 # =========================================================
-if page == "🧪 Generate Test Data":
-    st.title("🧪 Generate 300 Test Records")
+if page == "🧪 Generate Data":
+    st.title("Generate Relationship Dataset (300 rows)")
 
-    if st.button("Generate Dataset"):
-        st.session_state.df = generate_test_data(300)
-        st.success("300 test records created successfully")
+    if st.button("Generate"):
+        st.session_state.df = generate_data(300)
+        st.success("Dataset generated")
         st.dataframe(st.session_state.df.head())
 
 # =========================================================
-# ➕ ADD PROCEDURE (FIXED WORKING FORM)
-# =========================================================
-elif page == "➕ Add Procedure":
-    st.title("➕ Add Procedure (Live Input)")
-
-    with st.form("add_form"):
-        col1, col2, col3 = st.columns(3)
-
-        with col1:
-            rep = st.selectbox("Rep", REPS)
-            hospital = st.selectbox("Hospital", HOSPITALS)
-
-        with col2:
-            region = st.selectbox("Region", REGIONS)
-            procedure = st.selectbox("Procedure", PROCEDURES)
-
-        with col3:
-            revenue = st.number_input("Revenue", 50000, 1000000, 150000)
-            outcome = st.slider("Outcome", 0, 100, 80)
-
-        submitted = st.form_submit_button("Save Procedure")
-
-        if submitted:
-            cost = int(revenue * 0.65)
-
-            new_row = {
-                "Date": datetime.today(),
-                "Rep": rep,
-                "Hospital": hospital,
-                "Region": region,
-                "Procedure": procedure,
-                "Revenue": revenue,
-                "Cost": cost,
-                "Profit": revenue - cost,
-                "Outcome": outcome
-            }
-
-            st.session_state.df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
-            st.session_state.df = process(st.session_state.df)
-
-            st.success("Procedure added successfully")
-
-# =========================================================
-# 📊 DASHBOARD (INTERACTIVE)
+# 📊 DASHBOARD
 # =========================================================
 elif page == "📊 Dashboard":
-    st.title("📊 Executive Command Dashboard")
+    st.title("📊 Relationship Intelligence Dashboard")
 
     if df.empty:
-        st.warning("No data available. Generate test data first.")
+        st.warning("No data available")
         st.stop()
 
-    # FILTERS
-    col1, col2, col3 = st.columns(3)
+    c1,c2,c3 = st.columns(3)
+    c1.metric("Cases", len(df))
+    c2.metric("Revenue", f"{df['Revenue'].sum():,.0f}")
+    c3.metric("Profit", f"{df['Profit'].sum():,.0f}")
 
-    with col1:
-        rep_filter = st.multiselect("Rep", df["Rep"].unique(), df["Rep"].unique())
-
-    with col2:
-        region_filter = st.multiselect("Region", df["Region"].unique(), df["Region"].unique())
-
-    with col3:
-        hospital_filter = st.multiselect("Hospital", df["Hospital"].unique(), df["Hospital"].unique())
-
-    df_f = df[
-        df["Rep"].isin(rep_filter) &
-        df["Region"].isin(region_filter) &
-        df["Hospital"].isin(hospital_filter)
-    ]
-
-    # KPIs
-    c1,c2,c3,c4 = st.columns(4)
-    c1.metric("Records", len(df_f))
-    c2.metric("Revenue", f"{df_f['Revenue'].sum():,.0f}")
-    c3.metric("Profit", f"{df_f['Profit'].sum():,.0f}")
-    c4.metric("Avg Outcome", f"{df_f['Outcome'].mean():.1f}")
-
-    st.divider()
-
-    # REP PERFORMANCE
     st.subheader("👥 Rep Performance")
-
-    rep = df_f.groupby("Rep").agg({
-        "Revenue":"sum",
-        "Profit":"sum",
-        "Outcome":"mean",
-        "Score":"sum"
-    }).sort_values("Score", ascending=False)
-
-    selected_rep = st.selectbox("Drill into Rep", rep.index)
-
-    st.dataframe(rep)
-
-    st.write("📋 Rep Details")
-    st.dataframe(df_f[df_f["Rep"] == selected_rep])
+    st.dataframe(df.groupby("Rep")[["Revenue","Profit","Score"]].sum())
 
 # =========================================================
-# 🤖 AI (SIMPLE BUT WORKING)
+# 📈 FORECAST
 # =========================================================
-elif page == "🤖 AI":
-    st.title("🤖 Sales AI Assistant")
+elif page == "📈 Forecast":
+    st.title("📈 Revenue Forecast Engine")
 
-    q = st.text_input("Ask AI")
+    pred = forecast(df)
 
-    if st.button("Run"):
-        if df.empty:
-            st.warning("No data available")
-        else:
-            top_rep = df.groupby("Rep")["Score"].sum().idxmax()
-            low_rep = df.groupby("Rep")["Score"].sum().idxmin()
-            top_region = df.groupby("Region")["Revenue"].sum().idxmax()
-
-            st.success(f"Top Rep: {top_rep}")
-            st.warning(f"Low Rep: {low_rep}")
-            st.info(f"Best Region: {top_region}")
+    if pred:
+        st.metric("Next Month Forecast", f"KES {pred:,.0f}")
+    else:
+        st.warning("Not enough data")
 
 # =========================================================
-# 💰 COMMISSION ENGINE
+# 🕸️ NETWORK MAP (KEY FEATURE)
 # =========================================================
-elif page == "💰 Commission":
-    st.title("💰 Commission Report")
+elif page == "🕸️ Network Map":
+    st.title("🕸️ Relationship Network Map")
 
     if df.empty:
-        st.warning("No data")
+        st.warning("No data available")
         st.stop()
 
-    rate = st.slider("Commission %", 1, 20, 8) / 100
+    G = build_graph(df)
 
-    comm = df.groupby("Rep").agg({
-        "Revenue":"sum",
-        "Profit":"sum"
-    })
+    plt.figure(figsize=(10,7))
 
-    comm["Commission"] = comm["Profit"] * rate
+    pos = nx.spring_layout(G, k=0.5)
 
-    st.dataframe(comm.sort_values("Commission", ascending=False))
+    node_colors = []
+
+    for node in G.nodes(data=True):
+        if node[1]["type"] == "Rep":
+            node_colors.append("blue")
+        elif node[1]["type"] == "Doctor":
+            node_colors.append("green")
+        else:
+            node_colors.append("orange")
+
+    nx.draw(
+        G,
+        pos,
+        with_labels=True,
+        node_color=node_colors,
+        node_size=800,
+        font_size=8
+    )
+
+    st.pyplot(plt)
