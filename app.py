@@ -1,11 +1,13 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from datetime import datetime, timedelta
+import random
 
 st.set_page_config(page_title="Enterprise Sales AI", layout="wide")
 
 # =========================================================
-# LOAD DATA
+# SESSION DATA INIT
 # =========================================================
 if "df" not in st.session_state:
     st.session_state.df = pd.DataFrame()
@@ -13,66 +15,215 @@ if "df" not in st.session_state:
 df = st.session_state.df
 
 # =========================================================
-# PROCESS DATA (SAFE + INTELLIGENT)
+# MASTER DATA
+# =========================================================
+REPS = [
+    "Kevin Ashiundu","Charity","Naomi","Carol","Josephine",
+    "Geoffrey","Jacob","Faith","Erick","Spencer",
+    "Evans","Miriam","Brian"
+]
+
+HOSPITALS = ["MTRH", "Kijabe", "Nairobi Hospital", "Mombasa Hospital", "Meru Hospital"]
+
+REGIONS = ["Eldoret", "Nairobi/Kijabe", "Mombasa", "Meru"]
+
+PROCEDURES = ["Trauma Case", "Arthroplasty Case", "Sports Injury", "Spinal Case"]
+
+# =========================================================
+# GENERATE 300 TEST RECORDS (IMPORTANT FIX)
+# =========================================================
+def generate_test_data(n=300):
+    data = []
+
+    for _ in range(n):
+        rep = random.choice(REPS)
+
+        revenue = random.randint(80000, 400000)
+        cost = int(revenue * random.uniform(0.5, 0.8))
+        profit = revenue - cost
+
+        row = {
+            "Date": datetime.today() - timedelta(days=random.randint(0, 365)),
+            "Rep": rep,
+            "Hospital": random.choice(HOSPITALS),
+            "Region": random.choice(REGIONS),
+            "Procedure": random.choice(PROCEDURES),
+            "Revenue": revenue,
+            "Cost": cost,
+            "Profit": profit,
+            "Outcome": random.randint(60, 100)
+        }
+
+        data.append(row)
+
+    return pd.DataFrame(data)
+
+# =========================================================
+# PROCESS DATA
 # =========================================================
 def process(df):
     if df.empty:
         return df
 
-    for c in ["Rep","Hospital","Region"]:
-        if c not in df.columns:
-            df[c] = "Unknown"
+    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
-    df["Revenue"] = df.get("Revenue", 100000)
-    df["Cost"] = df.get("Cost", 60000)
-    df["Profit"] = df["Revenue"] - df["Cost"]
-
-    df["Outcome"] = pd.to_numeric(df.get("Outcome", 70), errors="coerce").fillna(70)
-
-    # SALES PERFORMANCE SCORE
-    df["Sales_Score"] = (
-        df["Revenue"] * 0.5 +
-        df["Profit"] * 0.3 +
+    df["Score"] = (
+        df["Revenue"] * 0.4 +
+        df["Profit"] * 0.4 +
         df["Outcome"] * 1000 * 0.2
     )
-
-    df["Date"] = pd.to_datetime(df.get("Date", pd.Timestamp.today()), errors="coerce")
 
     return df
 
 df = process(df)
 
 # =========================================================
-# FORECAST ENGINE (PER REP + TOTAL)
+# NAVIGATION
 # =========================================================
-def forecast(df):
+page = st.sidebar.radio(
+    "Enterprise System",
+    ["📊 Dashboard","➕ Add Procedure","🧪 Generate Test Data","🤖 AI","💰 Commission"]
+)
+
+# =========================================================
+# 🧪 TEST DATA (FIXED BUTTON)
+# =========================================================
+if page == "🧪 Generate Test Data":
+    st.title("🧪 Generate 300 Test Records")
+
+    if st.button("Generate Dataset"):
+        st.session_state.df = generate_test_data(300)
+        st.success("300 test records created successfully")
+        st.dataframe(st.session_state.df.head())
+
+# =========================================================
+# ➕ ADD PROCEDURE (FIXED WORKING FORM)
+# =========================================================
+elif page == "➕ Add Procedure":
+    st.title("➕ Add Procedure (Live Input)")
+
+    with st.form("add_form"):
+        col1, col2, col3 = st.columns(3)
+
+        with col1:
+            rep = st.selectbox("Rep", REPS)
+            hospital = st.selectbox("Hospital", HOSPITALS)
+
+        with col2:
+            region = st.selectbox("Region", REGIONS)
+            procedure = st.selectbox("Procedure", PROCEDURES)
+
+        with col3:
+            revenue = st.number_input("Revenue", 50000, 1000000, 150000)
+            outcome = st.slider("Outcome", 0, 100, 80)
+
+        submitted = st.form_submit_button("Save Procedure")
+
+        if submitted:
+            cost = int(revenue * 0.65)
+
+            new_row = {
+                "Date": datetime.today(),
+                "Rep": rep,
+                "Hospital": hospital,
+                "Region": region,
+                "Procedure": procedure,
+                "Revenue": revenue,
+                "Cost": cost,
+                "Profit": revenue - cost,
+                "Outcome": outcome
+            }
+
+            st.session_state.df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+            st.session_state.df = process(st.session_state.df)
+
+            st.success("Procedure added successfully")
+
+# =========================================================
+# 📊 DASHBOARD (INTERACTIVE)
+# =========================================================
+elif page == "📊 Dashboard":
+    st.title("📊 Executive Command Dashboard")
+
     if df.empty:
-        return None, None
+        st.warning("No data available. Generate test data first.")
+        st.stop()
 
-    df["Month"] = df["Date"].dt.to_period("M").astype(str)
+    # FILTERS
+    col1, col2, col3 = st.columns(3)
 
-    monthly = df.groupby("Month")["Revenue"].sum().reset_index()
+    with col1:
+        rep_filter = st.multiselect("Rep", df["Rep"].unique(), df["Rep"].unique())
 
-    if len(monthly) < 2:
-        return None, None
+    with col2:
+        region_filter = st.multiselect("Region", df["Region"].unique(), df["Region"].unique())
 
-    x = np.arange(len(monthly))
-    y = monthly["Revenue"].values
+    with col3:
+        hospital_filter = st.multiselect("Hospital", df["Hospital"].unique(), df["Hospital"].unique())
 
-    slope = np.polyfit(x, y, 1)[0]
-    total_forecast = max(y[-1] + slope, 0)
+    df_f = df[
+        df["Rep"].isin(rep_filter) &
+        df["Region"].isin(region_filter) &
+        df["Hospital"].isin(hospital_filter)
+    ]
 
-    # rep forecast
-    rep_forecast = df.groupby("Rep")["Revenue"].sum() * 1.05
+    # KPIs
+    c1,c2,c3,c4 = st.columns(4)
+    c1.metric("Records", len(df_f))
+    c2.metric("Revenue", f"{df_f['Revenue'].sum():,.0f}")
+    c3.metric("Profit", f"{df_f['Profit'].sum():,.0f}")
+    c4.metric("Avg Outcome", f"{df_f['Outcome'].mean():.1f}")
 
-    return total_forecast, rep_forecast
+    st.divider()
+
+    # REP PERFORMANCE
+    st.subheader("👥 Rep Performance")
+
+    rep = df_f.groupby("Rep").agg({
+        "Revenue":"sum",
+        "Profit":"sum",
+        "Outcome":"mean",
+        "Score":"sum"
+    }).sort_values("Score", ascending=False)
+
+    selected_rep = st.selectbox("Drill into Rep", rep.index)
+
+    st.dataframe(rep)
+
+    st.write("📋 Rep Details")
+    st.dataframe(df_f[df_f["Rep"] == selected_rep])
 
 # =========================================================
-# COMMISSION ENGINE
+# 🤖 AI (SIMPLE BUT WORKING)
 # =========================================================
-def commission(df, rate=0.08):
+elif page == "🤖 AI":
+    st.title("🤖 Sales AI Assistant")
+
+    q = st.text_input("Ask AI")
+
+    if st.button("Run"):
+        if df.empty:
+            st.warning("No data available")
+        else:
+            top_rep = df.groupby("Rep")["Score"].sum().idxmax()
+            low_rep = df.groupby("Rep")["Score"].sum().idxmin()
+            top_region = df.groupby("Region")["Revenue"].sum().idxmax()
+
+            st.success(f"Top Rep: {top_rep}")
+            st.warning(f"Low Rep: {low_rep}")
+            st.info(f"Best Region: {top_region}")
+
+# =========================================================
+# 💰 COMMISSION ENGINE
+# =========================================================
+elif page == "💰 Commission":
+    st.title("💰 Commission Report")
+
     if df.empty:
-        return pd.DataFrame()
+        st.warning("No data")
+        st.stop()
+
+    rate = st.slider("Commission %", 1, 20, 8) / 100
 
     comm = df.groupby("Rep").agg({
         "Revenue":"sum",
@@ -80,119 +231,5 @@ def commission(df, rate=0.08):
     })
 
     comm["Commission"] = comm["Profit"] * rate
-    return comm.sort_values("Commission", ascending=False)
 
-# =========================================================
-# GPT-STYLE SALES CHAT (SIMPLIFIED COPILOT)
-# =========================================================
-def gpt_chat(df, q):
-    q = q.lower()
-
-    if df.empty:
-        return "No sales data available."
-
-    if "best rep" in q:
-        r = df.groupby("Rep")["Sales_Score"].sum().idxmax()
-        return f"🏆 Best performing rep: {r}"
-
-    if "underperform" in q:
-        r = df.groupby("Rep")["Sales_Score"].sum().idxmin()
-        return f"⚠️ Underperforming rep: {r}"
-
-    if "forecast" in q:
-        total, _ = forecast(df)
-        return f"📈 Next period forecast revenue: {total:,.0f}"
-
-    if "commission" in q:
-        top = commission(df).head(1).index[0]
-        return f"💰 Top commission earner: {top}"
-
-    if "region" in q:
-        r = df.groupby("Region")["Revenue"].sum().idxmin()
-        return f"📉 Weak region: {r}"
-
-    return "Ask: best rep, underperforming rep, forecast, commission, region"
-
-# =========================================================
-# NAVIGATION
-# =========================================================
-page = st.sidebar.radio(
-    "Enterprise AI System",
-    ["📊 Dashboard","🤖 GPT Sales Chat","💰 Commission","📁 Upload"]
-)
-
-# =========================================================
-# 📁 UPLOAD
-# =========================================================
-if page == "📁 Upload":
-    st.title("Upload Sales Data")
-
-    file = st.file_uploader("CSV / Excel")
-
-    if file:
-        if file.name.endswith(".csv"):
-            new = pd.read_csv(file)
-        else:
-            new = pd.read_excel(file)
-
-        st.session_state.df = pd.concat([df, new], ignore_index=True)
-        st.session_state.df = process(st.session_state.df)
-
-        st.success("Data loaded successfully")
-
-# =========================================================
-# 📊 DASHBOARD (ENTERPRISE VIEW)
-# =========================================================
-elif page == "📊 Dashboard":
-    st.title("📊 Enterprise Sales Command Center")
-
-    if df.empty:
-        st.warning("No data available")
-        st.stop()
-
-    c1,c2,c3,c4 = st.columns(4)
-    c1.metric("Sales Entries", len(df))
-    c2.metric("Revenue", f"{df['Revenue'].sum():,.0f}")
-    c3.metric("Profit", f"{df['Profit'].sum():,.0f}")
-    c4.metric("Avg Score", f"{df['Sales_Score'].mean():.1f}")
-
-    st.divider()
-
-    st.subheader("👥 Rep Ranking")
-
-    rep = df.groupby("Rep").agg({
-        "Revenue":"sum",
-        "Profit":"sum",
-        "Sales_Score":"sum"
-    }).sort_values("Sales_Score", ascending=False)
-
-    st.dataframe(rep)
-
-# =========================================================
-# 🤖 GPT CHAT
-# =========================================================
-elif page == "🤖 GPT Sales Chat":
-    st.title("🤖 Sales AI Copilot")
-
-    q = st.text_input("Ask your sales AI")
-
-    if st.button("Ask"):
-        st.success(gpt_chat(df, q))
-
-# =========================================================
-# 💰 COMMISSION
-# =========================================================
-elif page == "💰 Commission":
-    st.title("💰 Commission Engine")
-
-    rate = st.slider("Commission Rate (%)", 1, 20, 8) / 100
-
-    comm = commission(df, rate)
-
-    st.dataframe(comm)
-
-    st.download_button(
-        "Download Commission Report",
-        comm.to_csv(),
-        "commission_report.csv"
-    )
+    st.dataframe(comm.sort_values("Commission", ascending=False))
