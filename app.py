@@ -1,9 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from datetime import datetime
 
-st.set_page_config(page_title="Ortho BI + AI System", layout="wide")
+st.set_page_config(page_title="Enterprise Sales AI", layout="wide")
 
 # =========================================================
 # LOAD DATA
@@ -14,13 +13,13 @@ if "df" not in st.session_state:
 df = st.session_state.df
 
 # =========================================================
-# SAFE PROCESSING
+# PROCESS DATA (SAFE + INTELLIGENT)
 # =========================================================
 def process(df):
     if df.empty:
         return df
 
-    for c in ["Doctor","Rep","Hospital","Region","Procedure"]:
+    for c in ["Rep","Hospital","Region"]:
         if c not in df.columns:
             df[c] = "Unknown"
 
@@ -30,10 +29,11 @@ def process(df):
 
     df["Outcome"] = pd.to_numeric(df.get("Outcome", 70), errors="coerce").fillna(70)
 
-    df["AI_Score"] = (
-        df["Outcome"] * 0.4 +
-        (df["Revenue"] / 100000) * 0.3 +
-        (df["Profit"] / 100000) * 0.3
+    # SALES PERFORMANCE SCORE
+    df["Sales_Score"] = (
+        df["Revenue"] * 0.5 +
+        df["Profit"] * 0.3 +
+        df["Outcome"] * 1000 * 0.2
     )
 
     df["Date"] = pd.to_datetime(df.get("Date", pd.Timestamp.today()), errors="coerce")
@@ -43,68 +43,89 @@ def process(df):
 df = process(df)
 
 # =========================================================
-# TIME FILTER ENGINE (POWER BI STYLE)
+# FORECAST ENGINE (PER REP + TOTAL)
 # =========================================================
-def time_filter(df, period):
+def forecast(df):
     if df.empty:
-        return df
+        return None, None
 
-    now = pd.Timestamp.today()
+    df["Month"] = df["Date"].dt.to_period("M").astype(str)
 
-    if period == "Last 7 Days":
-        return df[df["Date"] >= now - pd.Timedelta(days=7)]
+    monthly = df.groupby("Month")["Revenue"].sum().reset_index()
 
-    if period == "Last 30 Days":
-        return df[df["Date"] >= now - pd.Timedelta(days=30)]
+    if len(monthly) < 2:
+        return None, None
 
-    if period == "Last 90 Days":
-        return df[df["Date"] >= now - pd.Timedelta(days=90)]
+    x = np.arange(len(monthly))
+    y = monthly["Revenue"].values
 
-    return df
+    slope = np.polyfit(x, y, 1)[0]
+    total_forecast = max(y[-1] + slope, 0)
+
+    # rep forecast
+    rep_forecast = df.groupby("Rep")["Revenue"].sum() * 1.05
+
+    return total_forecast, rep_forecast
 
 # =========================================================
-# AI CHAT ENGINE
+# COMMISSION ENGINE
 # =========================================================
-def ai_chat(df, q):
+def commission(df, rate=0.08):
+    if df.empty:
+        return pd.DataFrame()
+
+    comm = df.groupby("Rep").agg({
+        "Revenue":"sum",
+        "Profit":"sum"
+    })
+
+    comm["Commission"] = comm["Profit"] * rate
+    return comm.sort_values("Commission", ascending=False)
+
+# =========================================================
+# GPT-STYLE SALES CHAT (SIMPLIFIED COPILOT)
+# =========================================================
+def gpt_chat(df, q):
     q = q.lower()
 
     if df.empty:
-        return "No data available."
+        return "No sales data available."
 
-    if "doctor" in q and "weak" in q:
-        d = df.groupby("Doctor")["AI_Score"].mean().sort_values().head(1)
-        return f"⚠️ Weak Doctor: {d.index[0]}"
+    if "best rep" in q:
+        r = df.groupby("Rep")["Sales_Score"].sum().idxmax()
+        return f"🏆 Best performing rep: {r}"
 
-    if "best doctor" in q:
-        d = df.groupby("Doctor")["AI_Score"].mean().sort_values(ascending=False).head(1)
-        return f"🏆 Best Doctor: {d.index[0]}"
+    if "underperform" in q:
+        r = df.groupby("Rep")["Sales_Score"].sum().idxmin()
+        return f"⚠️ Underperforming rep: {r}"
 
-    if "revenue" in q:
-        return f"💰 Revenue: {df['Revenue'].sum():,.0f}"
+    if "forecast" in q:
+        total, _ = forecast(df)
+        return f"📈 Next period forecast revenue: {total:,.0f}"
 
-    if "drop" in q or "down" in q:
-        r = df.groupby("Region")["Revenue"].sum()
-        return f"📉 Weak Region: {r.idxmin()}"
+    if "commission" in q:
+        top = commission(df).head(1).index[0]
+        return f"💰 Top commission earner: {top}"
 
-    if "rep" in q:
-        r = df.groupby("Rep")["Revenue"].sum().sort_values(ascending=False)
-        return f"👥 Top Rep: {r.index[0]}"
+    if "region" in q:
+        r = df.groupby("Region")["Revenue"].sum().idxmin()
+        return f"📉 Weak region: {r}"
 
-    return "Ask: doctor, rep, revenue, region, performance, weak, best"
+    return "Ask: best rep, underperforming rep, forecast, commission, region"
 
 # =========================================================
 # NAVIGATION
 # =========================================================
 page = st.sidebar.radio(
-    "BI System",
-    ["📊 Dashboard","🤖 AI Chat","📁 Upload"]
+    "Enterprise AI System",
+    ["📊 Dashboard","🤖 GPT Sales Chat","💰 Commission","📁 Upload"]
 )
 
 # =========================================================
 # 📁 UPLOAD
 # =========================================================
 if page == "📁 Upload":
-    st.title("📁 Upload Data")
+    st.title("Upload Sales Data")
 
     file = st.file_uploader("CSV / Excel")
 
@@ -117,90 +138,61 @@ if page == "📁 Upload":
         st.session_state.df = pd.concat([df, new], ignore_index=True)
         st.session_state.df = process(st.session_state.df)
 
-        st.success("Uploaded successfully")
+        st.success("Data loaded successfully")
 
 # =========================================================
-# 📊 DASHBOARD (POWER BI STYLE)
+# 📊 DASHBOARD (ENTERPRISE VIEW)
 # =========================================================
 elif page == "📊 Dashboard":
-    st.title("📊 Power BI Style Dashboard")
+    st.title("📊 Enterprise Sales Command Center")
 
     if df.empty:
         st.warning("No data available")
         st.stop()
 
-    # -------------------------
-    # TIME FILTER
-    # -------------------------
-    period = st.selectbox(
-        "Time Filter",
-        ["All Time","Last 7 Days","Last 30 Days","Last 90 Days"]
-    )
-
-    df_f = time_filter(df, period)
-
-    # -------------------------
-    # CROSS FILTERS
-    # -------------------------
-    col1, col2, col3 = st.columns(3)
-
-    with col1:
-        region = st.multiselect("Region", df_f["Region"].unique(), df_f["Region"].unique())
-
-    with col2:
-        doctor = st.multiselect("Doctor", df_f["Doctor"].unique(), df_f["Doctor"].unique())
-
-    with col3:
-        rep = st.multiselect("Rep", df_f["Rep"].unique(), df_f["Rep"].unique())
-
-    df_f = df_f[
-        df_f["Region"].isin(region) &
-        df_f["Doctor"].isin(doctor) &
-        df_f["Rep"].isin(rep)
-    ]
-
-    # -------------------------
-    # KPIs
-    # -------------------------
     c1,c2,c3,c4 = st.columns(4)
-    c1.metric("Cases", len(df_f))
-    c2.metric("Revenue", f"{df_f['Revenue'].sum():,.0f}")
-    c3.metric("Profit", f"{df_f['Profit'].sum():,.0f}")
-    c4.metric("AI Score", f"{df_f['AI_Score'].mean():.1f}")
+    c1.metric("Sales Entries", len(df))
+    c2.metric("Revenue", f"{df['Revenue'].sum():,.0f}")
+    c3.metric("Profit", f"{df['Profit'].sum():,.0f}")
+    c4.metric("Avg Score", f"{df['Sales_Score'].mean():.1f}")
 
     st.divider()
 
-    # -------------------------
-    # DRILLDOWN TABLES
-    # -------------------------
-    st.subheader("👨‍⚕️ Doctor Performance")
+    st.subheader("👥 Rep Ranking")
 
-    doc = df_f.groupby("Doctor").agg({
+    rep = df.groupby("Rep").agg({
         "Revenue":"sum",
         "Profit":"sum",
-        "AI_Score":"mean"
-    }).sort_values("AI_Score", ascending=False)
+        "Sales_Score":"sum"
+    }).sort_values("Sales_Score", ascending=False)
 
-    selected = st.selectbox("Drill into Doctor", doc.index)
-
-    st.dataframe(doc)
-    st.dataframe(df_f[df_f["Doctor"] == selected])
-
-    st.subheader("👥 Rep Performance")
-    st.dataframe(df_f.groupby("Rep")["Revenue"].sum())
-
-    st.subheader("🏥 Hospital Performance")
-    st.dataframe(df_f.groupby("Hospital")["Revenue"].sum())
+    st.dataframe(rep)
 
 # =========================================================
-# 🤖 AI CHAT (POWER BI COPILOT STYLE)
+# 🤖 GPT CHAT
 # =========================================================
-elif page == "🤖 AI Chat":
-    st.title("🤖 BI Copilot AI")
+elif page == "🤖 GPT Sales Chat":
+    st.title("🤖 Sales AI Copilot")
 
-    st.info("Ask anything about your data")
+    q = st.text_input("Ask your sales AI")
 
-    q = st.text_input("Ask a question")
+    if st.button("Ask"):
+        st.success(gpt_chat(df, q))
 
-    if st.button("Ask AI"):
-        st.success(ai_chat(df, q))
+# =========================================================
+# 💰 COMMISSION
+# =========================================================
+elif page == "💰 Commission":
+    st.title("💰 Commission Engine")
+
+    rate = st.slider("Commission Rate (%)", 1, 20, 8) / 100
+
+    comm = commission(df, rate)
+
+    st.dataframe(comm)
+
+    st.download_button(
+        "Download Commission Report",
+        comm.to_csv(),
+        "commission_report.csv"
+    )
