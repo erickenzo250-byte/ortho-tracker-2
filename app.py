@@ -1,36 +1,26 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from pathlib import Path
+from datetime import datetime
 
-st.set_page_config(page_title="Ortho AI Intelligence System", layout="wide")
-
-DATA_FILE = Path("ortho_ai_data.csv")
+st.set_page_config(page_title="Ortho BI + AI System", layout="wide")
 
 # =========================================================
 # LOAD DATA
 # =========================================================
-def load():
-    if DATA_FILE.exists():
-        return pd.read_csv(DATA_FILE)
-    return pd.DataFrame()
-
 if "df" not in st.session_state:
-    st.session_state.df = load()
+    st.session_state.df = pd.DataFrame()
 
-def save():
-    st.session_state.df.to_csv(DATA_FILE, index=False)
+df = st.session_state.df
 
 # =========================================================
-# INTELLIGENT DATA PROCESSING
+# SAFE PROCESSING
 # =========================================================
 def process(df):
     if df.empty:
         return df
 
-    required = ["Doctor","Rep","Hospital","Region","Outcome"]
-
-    for c in required:
+    for c in ["Doctor","Rep","Hospital","Region","Procedure"]:
         if c not in df.columns:
             df[c] = "Unknown"
 
@@ -38,109 +28,85 @@ def process(df):
     df["Cost"] = df.get("Cost", 60000)
     df["Profit"] = df["Revenue"] - df["Cost"]
 
-    df["Outcome"] = pd.to_numeric(df["Outcome"], errors="coerce").fillna(70)
+    df["Outcome"] = pd.to_numeric(df.get("Outcome", 70), errors="coerce").fillna(70)
 
-    # AI Score (multi-factor intelligence)
     df["AI_Score"] = (
-        df["Outcome"] * 0.45 +
-        (df["Revenue"] / 100000) * 0.25 +
-        (df["Profit"] / 100000) * 0.30
+        df["Outcome"] * 0.4 +
+        (df["Revenue"] / 100000) * 0.3 +
+        (df["Profit"] / 100000) * 0.3
     )
+
+    df["Date"] = pd.to_datetime(df.get("Date", pd.Timestamp.today()), errors="coerce")
 
     return df
 
-df = process(st.session_state.df)
+df = process(df)
 
 # =========================================================
-# AI ENGINE (DECISION MAKER)
+# TIME FILTER ENGINE (POWER BI STYLE)
 # =========================================================
-def ai_engine(df):
-    insights = []
+def time_filter(df, period):
+    if df.empty:
+        return df
+
+    now = pd.Timestamp.today()
+
+    if period == "Last 7 Days":
+        return df[df["Date"] >= now - pd.Timedelta(days=7)]
+
+    if period == "Last 30 Days":
+        return df[df["Date"] >= now - pd.Timedelta(days=30)]
+
+    if period == "Last 90 Days":
+        return df[df["Date"] >= now - pd.Timedelta(days=90)]
+
+    return df
+
+# =========================================================
+# AI CHAT ENGINE
+# =========================================================
+def ai_chat(df, q):
+    q = q.lower()
 
     if df.empty:
-        return ["No data available"]
+        return "No data available."
 
-    # TOP DOCTOR
-    top_doc = df.groupby("Doctor")["AI_Score"].mean().sort_values(ascending=False).head(1)
-    insights.append(f"🟢 Top Doctor: {top_doc.index[0]}")
+    if "doctor" in q and "weak" in q:
+        d = df.groupby("Doctor")["AI_Score"].mean().sort_values().head(1)
+        return f"⚠️ Weak Doctor: {d.index[0]}"
 
-    # WEAK DOCTOR
-    weak_doc = df.groupby("Doctor")["AI_Score"].mean().sort_values().head(1)
-    insights.append(f"🔴 Needs Support: {weak_doc.index[0]}")
+    if "best doctor" in q:
+        d = df.groupby("Doctor")["AI_Score"].mean().sort_values(ascending=False).head(1)
+        return f"🏆 Best Doctor: {d.index[0]}"
 
-    # REGION RISK
-    region = df.groupby("Region")["Revenue"].sum()
-    insights.append(f"⚠️ Weak Region: {region.idxmin()}")
+    if "revenue" in q:
+        return f"💰 Revenue: {df['Revenue'].sum():,.0f}"
 
-    # REP PERFORMANCE
-    rep = df.groupby("Rep")["Revenue"].sum()
-    insights.append(f"📊 Best Rep: {rep.idxmax()}")
+    if "drop" in q or "down" in q:
+        r = df.groupby("Region")["Revenue"].sum()
+        return f"📉 Weak Region: {r.idxmin()}"
 
-    return insights
+    if "rep" in q:
+        r = df.groupby("Rep")["Revenue"].sum().sort_values(ascending=False)
+        return f"👥 Top Rep: {r.index[0]}"
 
-# =========================================================
-# FORECAST ENGINE (TREND-BASED)
-# =========================================================
-def forecast(df):
-    if df.empty or "Date" not in df.columns:
-        return None
-
-    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
-    df["Month"] = df["Date"].dt.to_period("M").astype(str)
-
-    monthly = df.groupby("Month")["Revenue"].sum().reset_index()
-
-    if len(monthly) < 2:
-        return None
-
-    x = np.arange(len(monthly))
-    y = monthly["Revenue"].values
-
-    slope = np.polyfit(x, y, 1)[0]
-
-    next_month = y[-1] + slope
-
-    return max(next_month, 0)
-
-# =========================================================
-# REPORT ENGINE
-# =========================================================
-def report(df):
-    if df.empty:
-        return "No data"
-
-    return f"""
-ORTHO EXECUTIVE AI REPORT
-
-Total Cases: {len(df)}
-Revenue: {df['Revenue'].sum():,.0f}
-Profit: {df['Profit'].sum():,.0f}
-Average Outcome: {df['Outcome'].mean():.1f}
-
-Top Region: {df.groupby('Region')['Revenue'].sum().idxmax()}
-Top Doctor: {df.groupby('Doctor')['AI_Score'].mean().idxmax()}
-
-AI Insight:
-- Optimize low performing doctors
-- Increase support in weak regions
-- Balance rep distribution
-"""
+    return "Ask: doctor, rep, revenue, region, performance, weak, best"
 
 # =========================================================
 # NAVIGATION
 # =========================================================
 page = st.sidebar.radio(
-    "AI Intelligence System",
-    ["📊 Dashboard","🤖 AI Engine","📈 Forecast","⚠️ Alerts","📑 Report","📁 Upload"]
+    "BI System",
+    ["📊 Dashboard","🤖 AI Chat","📁 Upload"]
 )
 
 # =========================================================
 # 📁 UPLOAD
 # =========================================================
 if page == "📁 Upload":
-    st.title("📁 Upload Hospital Data")
+    st.title("📁 Upload Data")
 
-    file = st.file_uploader("Upload CSV / Excel")
+    file = st.file_uploader("CSV / Excel")
 
     if file:
         if file.name.endswith(".csv"):
@@ -151,83 +117,90 @@ if page == "📁 Upload":
         st.session_state.df = pd.concat([df, new], ignore_index=True)
         st.session_state.df = process(st.session_state.df)
 
-        save()
-        st.success("Data loaded successfully")
+        st.success("Uploaded successfully")
 
 # =========================================================
-# 📊 DASHBOARD
+# 📊 DASHBOARD (POWER BI STYLE)
 # =========================================================
 elif page == "📊 Dashboard":
-    st.title("📊 Executive Intelligence Dashboard")
+    st.title("📊 Power BI Style Dashboard")
 
     if df.empty:
-        st.warning("No data")
+        st.warning("No data available")
         st.stop()
 
-    c1,c2,c3,c4 = st.columns(4)
-    c1.metric("Cases", len(df))
-    c2.metric("Revenue", f"{df['Revenue'].sum():,.0f}")
-    c3.metric("Profit", f"{df['Profit'].sum():,.0f}")
-    c4.metric("AI Score", f"{df['AI_Score'].mean():.1f}")
-
-    st.subheader("📈 Performance Trend")
-
-    if "Date" in df.columns:
-        df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
-        df["Month"] = df["Date"].dt.to_period("M").astype(str)
-        st.line_chart(df.groupby("Month")["Revenue"].sum())
-
-# =========================================================
-# 🤖 AI ENGINE
-# =========================================================
-elif page == "🤖 AI Engine":
-    st.title("🤖 AI Decision Engine")
-
-    for i in ai_engine(df):
-        st.success(i)
-
-# =========================================================
-# 📈 FORECAST
-# =========================================================
-elif page == "📈 Forecast":
-    st.title("📈 Predictive Intelligence")
-
-    pred = forecast(df)
-
-    if pred:
-        st.metric("Next Month Revenue Forecast", f"KES {pred:,.0f}")
-    else:
-        st.warning("Not enough data for prediction")
-
-# =========================================================
-# ⚠️ ALERTS
-# =========================================================
-elif page == "⚠️ Alerts":
-    st.title("⚠️ Risk Alerts")
-
-    alerts = []
-
-    if df["Outcome"].mean() < 75:
-        alerts.append("Low clinical outcomes detected")
-
-    weak = df.groupby("Doctor")["AI_Score"].mean().sort_values().head(1)
-    alerts.append(f"Doctor needing support: {weak.index[0]}")
-
-    for a in alerts:
-        st.warning(a)
-
-# =========================================================
-# 📑 REPORT
-# =========================================================
-elif page == "📑 Report":
-    st.title("📑 Executive AI Report")
-
-    rep = report(df)
-
-    st.text(rep)
-
-    st.download_button(
-        "Download Report",
-        rep,
-        file_name="ai_executive_report.txt"
+    # -------------------------
+    # TIME FILTER
+    # -------------------------
+    period = st.selectbox(
+        "Time Filter",
+        ["All Time","Last 7 Days","Last 30 Days","Last 90 Days"]
     )
+
+    df_f = time_filter(df, period)
+
+    # -------------------------
+    # CROSS FILTERS
+    # -------------------------
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        region = st.multiselect("Region", df_f["Region"].unique(), df_f["Region"].unique())
+
+    with col2:
+        doctor = st.multiselect("Doctor", df_f["Doctor"].unique(), df_f["Doctor"].unique())
+
+    with col3:
+        rep = st.multiselect("Rep", df_f["Rep"].unique(), df_f["Rep"].unique())
+
+    df_f = df_f[
+        df_f["Region"].isin(region) &
+        df_f["Doctor"].isin(doctor) &
+        df_f["Rep"].isin(rep)
+    ]
+
+    # -------------------------
+    # KPIs
+    # -------------------------
+    c1,c2,c3,c4 = st.columns(4)
+    c1.metric("Cases", len(df_f))
+    c2.metric("Revenue", f"{df_f['Revenue'].sum():,.0f}")
+    c3.metric("Profit", f"{df_f['Profit'].sum():,.0f}")
+    c4.metric("AI Score", f"{df_f['AI_Score'].mean():.1f}")
+
+    st.divider()
+
+    # -------------------------
+    # DRILLDOWN TABLES
+    # -------------------------
+    st.subheader("👨‍⚕️ Doctor Performance")
+
+    doc = df_f.groupby("Doctor").agg({
+        "Revenue":"sum",
+        "Profit":"sum",
+        "AI_Score":"mean"
+    }).sort_values("AI_Score", ascending=False)
+
+    selected = st.selectbox("Drill into Doctor", doc.index)
+
+    st.dataframe(doc)
+    st.dataframe(df_f[df_f["Doctor"] == selected])
+
+    st.subheader("👥 Rep Performance")
+    st.dataframe(df_f.groupby("Rep")["Revenue"].sum())
+
+    st.subheader("🏥 Hospital Performance")
+    st.dataframe(df_f.groupby("Hospital")["Revenue"].sum())
+
+# =========================================================
+# 🤖 AI CHAT (POWER BI COPILOT STYLE)
+# =========================================================
+elif page == "🤖 AI Chat":
+    st.title("🤖 BI Copilot AI")
+
+    st.info("Ask anything about your data")
+
+    q = st.text_input("Ask a question")
+
+    if st.button("Ask AI"):
+        st.success(ai_chat(df, q))
