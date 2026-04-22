@@ -1,15 +1,23 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import networkx as nx
-import matplotlib.pyplot as plt
-from datetime import datetime, timedelta
+import openai
+from datetime import datetime
 import random
 
-st.set_page_config(page_title="Relationship AI System", layout="wide")
+st.set_page_config(page_title="Autonomous Sales AI", layout="wide")
 
 # =========================================================
-# DATA INIT
+# AI CONFIG
+# =========================================================
+st.sidebar.title("🔐 AI Settings")
+api_key = st.sidebar.text_input("OpenAI Key", type="password")
+
+if api_key:
+    openai.api_key = api_key
+
+# =========================================================
+# SESSION DATA
 # =========================================================
 if "df" not in st.session_state:
     st.session_state.df = pd.DataFrame()
@@ -20,45 +28,40 @@ df = st.session_state.df
 # MASTER DATA
 # =========================================================
 REPS = ["Kevin","Charity","Naomi","Carol","Josephine","Geoffrey","Jacob","Faith","Erick","Spencer","Evans","Miriam","Brian"]
-
 DOCTORS = ["Dr Achieng","Dr Patel","Dr Kamau","Dr Smith","Dr Njoroge","Dr Otieno"]
-
 HOSPITALS = ["MTRH","Kijabe","Nairobi Hospital","Mombasa Hospital","Meru Hospital"]
 
 # =========================================================
-# TEST DATA GENERATION (RELATIONSHIP STRUCTURED)
+# TEST DATA
 # =========================================================
 def generate_data(n=300):
     data = []
 
     for _ in range(n):
-        hospital = random.choice(HOSPITALS)
-        doctor = random.choice(DOCTORS)
-        rep = random.choice(REPS)
-
-        revenue = random.randint(80000, 400000)
-        cost = int(revenue * random.uniform(0.5, 0.8))
-        profit = revenue - cost
+        revenue = random.randint(80000, 500000)
+        cost = int(revenue * random.uniform(0.5, 0.75))
 
         data.append({
-            "Date": datetime.today() - timedelta(days=random.randint(0, 365)),
-            "Rep": rep,
-            "Doctor": doctor,
-            "Hospital": hospital,
+            "Date": datetime.today(),
+            "Rep": random.choice(REPS),
+            "Doctor": random.choice(DOCTORS),
+            "Hospital": random.choice(HOSPITALS),
             "Revenue": revenue,
             "Cost": cost,
-            "Profit": profit,
+            "Profit": revenue - cost,
             "Outcome": random.randint(60,100)
         })
 
     return pd.DataFrame(data)
 
 # =========================================================
-# PROCESSING
+# PROCESS DATA
 # =========================================================
 def process(df):
     if df.empty:
         return df
+
+    df["Date"] = pd.to_datetime(df["Date"])
 
     df["Score"] = (
         df["Revenue"] * 0.4 +
@@ -71,135 +74,169 @@ def process(df):
 df = process(df)
 
 # =========================================================
+# AUTONOMOUS ANALYSIS ENGINE (CORE BRAIN)
+# =========================================================
+def autonomous_analysis(df):
+    alerts = []
+    insights = []
+
+    if df.empty:
+        return alerts, insights
+
+    rep_perf = df.groupby("Rep")["Revenue"].sum()
+
+    # ALERTS
+    if len(rep_perf) > 0:
+        worst_rep = rep_perf.idxmin()
+        best_rep = rep_perf.idxmax()
+
+        alerts.append(f"⚠️ Weak Rep Detected: {worst_rep}")
+        alerts.append(f"🏆 Top Rep: {best_rep}")
+
+    region_perf = df.groupby("Hospital")["Revenue"].sum()
+
+    if len(region_perf) > 0:
+        worst_hosp = region_perf.idxmin()
+        alerts.append(f"🏥 Underperforming Hospital: {worst_hosp}")
+
+    # INSIGHTS
+    insights.append(f"Total Revenue: {df['Revenue'].sum():,.0f}")
+    insights.append(f"Total Profit: {df['Profit'].sum():,.0f}")
+    insights.append(f"Total Records: {len(df)}")
+
+    return alerts, insights
+
+# =========================================================
 # FORECAST ENGINE
 # =========================================================
 def forecast(df):
     if df.empty:
         return None
 
-    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
-    df["Month"] = df["Date"].dt.to_period("M").astype(str)
+    df = df.copy()
+    df["Month"] = df["Date"].dt.month
 
-    monthly = df.groupby("Month")["Revenue"].sum().values
+    monthly = df.groupby("Month")["Revenue"].sum()
 
     if len(monthly) < 2:
         return None
 
     x = np.arange(len(monthly))
-    slope = np.polyfit(x, monthly, 1)[0]
+    slope = np.polyfit(x, monthly.values, 1)[0]
 
-    return max(monthly[-1] + slope, 0)
+    return max(monthly.values[-1] + slope, 0)
 
 # =========================================================
-# RELATIONSHIP GRAPH BUILDER
+# GPT COPILOT
 # =========================================================
-def build_graph(df):
-    G = nx.Graph()
-
+def gpt(df, q):
     if df.empty:
-        return G
+        return "No data available"
 
-    for _, row in df.iterrows():
-        rep = row["Rep"]
-        doctor = row["Doctor"]
-        hospital = row["Hospital"]
-        revenue = row["Revenue"]
+    summary = f"""
+    Revenue: {df['Revenue'].sum()}
+    Profit: {df['Profit'].sum()}
+    Top Rep: {df.groupby('Rep')['Revenue'].sum().idxmax()}
+    Worst Rep: {df.groupby('Rep')['Revenue'].sum().idxmin()}
+    """
 
-        # Nodes
-        G.add_node(rep, type="Rep")
-        G.add_node(doctor, type="Doctor")
-        G.add_node(hospital, type="Hospital")
+    prompt = f"""
+You are an enterprise autonomous AI analyst.
 
-        # Edges (RELATIONSHIPS)
-        G.add_edge(rep, doctor, weight=revenue)
-        G.add_edge(doctor, hospital, weight=revenue)
-        G.add_edge(rep, hospital, weight=revenue)
+DATA:
+{summary}
 
-    return G
+QUESTION:
+{q}
+
+Give precise business insight.
+"""
+
+    try:
+        res = openai.ChatCompletion.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role":"system","content":"You are a senior BI AI."},
+                {"role":"user","content":prompt}
+            ],
+            temperature=0.3
+        )
+
+        return res["choices"][0]["message"]["content"]
+
+    except:
+        return "AI not configured"
 
 # =========================================================
 # NAVIGATION
 # =========================================================
 page = st.sidebar.radio(
-    "AI System",
-    ["📊 Dashboard","🕸️ Network Map","📈 Forecast","🧪 Generate Data"]
+    "Autonomous AI System",
+    ["🏠 Dashboard","🧠 AI Copilot","🚨 Alerts","📈 Forecast","⚙️ Data Engine"]
 )
 
 # =========================================================
-# 🧪 GENERATE DATA
+# ⚙️ DATA ENGINE
 # =========================================================
-if page == "🧪 Generate Data":
-    st.title("Generate Relationship Dataset (300 rows)")
+if page == "⚙️ Data Engine":
+    st.title("Data Generator")
 
-    if st.button("Generate"):
+    if st.button("Generate 300 Records"):
         st.session_state.df = generate_data(300)
-        st.success("Dataset generated")
-        st.dataframe(st.session_state.df.head())
+        st.success("Autonomous dataset created")
 
 # =========================================================
-# 📊 DASHBOARD
+# 🏠 DASHBOARD (AUTO INSIGHTS)
 # =========================================================
-elif page == "📊 Dashboard":
-    st.title("📊 Relationship Intelligence Dashboard")
+elif page == "🏠 Dashboard":
+    st.title("Autonomous Executive Dashboard")
 
     if df.empty:
-        st.warning("No data available")
+        st.warning("Generate data first")
         st.stop()
 
-    c1,c2,c3 = st.columns(3)
-    c1.metric("Cases", len(df))
-    c2.metric("Revenue", f"{df['Revenue'].sum():,.0f}")
-    c3.metric("Profit", f"{df['Profit'].sum():,.0f}")
+    alerts, insights = autonomous_analysis(df)
 
-    st.subheader("👥 Rep Performance")
-    st.dataframe(df.groupby("Rep")[["Revenue","Profit","Score"]].sum())
+    c1,c2,c3 = st.columns(3)
+    c1.metric("Revenue", f"{df['Revenue'].sum():,.0f}")
+    c2.metric("Profit", f"{df['Profit'].sum():,.0f}")
+    c3.metric("Records", len(df))
+
+    st.subheader("📊 Auto Insights")
+    for i in insights:
+        st.info(i)
+
+# =========================================================
+# 🚨 ALERTS
+# =========================================================
+elif page == "🚨 Alerts":
+    st.title("🚨 Autonomous Alerts")
+
+    alerts, _ = autonomous_analysis(df)
+
+    for a in alerts:
+        st.warning(a)
 
 # =========================================================
 # 📈 FORECAST
 # =========================================================
 elif page == "📈 Forecast":
-    st.title("📈 Revenue Forecast Engine")
+    st.title("📈 Autonomous Forecast Engine")
 
     pred = forecast(df)
 
     if pred:
-        st.metric("Next Month Forecast", f"KES {pred:,.0f}")
+        st.metric("Next Revenue Forecast", f"{pred:,.0f}")
     else:
         st.warning("Not enough data")
 
 # =========================================================
-# 🕸️ NETWORK MAP (KEY FEATURE)
+# 🧠 AI COPILOT
 # =========================================================
-elif page == "🕸️ Network Map":
-    st.title("🕸️ Relationship Network Map")
+elif page == "🧠 AI Copilot":
+    st.title("Autonomous GPT Copilot")
 
-    if df.empty:
-        st.warning("No data available")
-        st.stop()
+    q = st.text_input("Ask anything")
 
-    G = build_graph(df)
-
-    plt.figure(figsize=(10,7))
-
-    pos = nx.spring_layout(G, k=0.5)
-
-    node_colors = []
-
-    for node in G.nodes(data=True):
-        if node[1]["type"] == "Rep":
-            node_colors.append("blue")
-        elif node[1]["type"] == "Doctor":
-            node_colors.append("green")
-        else:
-            node_colors.append("orange")
-
-    nx.draw(
-        G,
-        pos,
-        with_labels=True,
-        node_color=node_colors,
-        node_size=800,
-        font_size=8
-    )
-
-    st.pyplot(plt)
+    if st.button("Ask AI"):
+        st.success(gpt(df, q))
