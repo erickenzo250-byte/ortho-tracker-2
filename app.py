@@ -1,18 +1,16 @@
 import streamlit as st
 import pandas as pd
-import random
-from datetime import datetime, timedelta
+import numpy as np
+from datetime import datetime
 from pathlib import Path
 
-# -----------------------------
-# CONFIG
-# -----------------------------
-st.set_page_config(page_title="Ortho Command System", layout="wide")
-DATA_FILE = Path("procedures.csv")
+st.set_page_config(page_title="Ortho Intelligence AI System", layout="wide")
 
-# -----------------------------
-# MASTER DATA
-# -----------------------------
+DATA_FILE = Path("ortho_data.csv")
+
+# =========================================================
+# MASTER DATA (FALLBACK FOR DEMO / CLEANING)
+# =========================================================
 PROCEDURES = [
     "Fracture Fixation", "Spinal Surgery",
     "Knee Replacement", "Hip Replacement",
@@ -48,16 +46,12 @@ COST = {
 
 REPS = [
     "Kevin Ashiundu","Charity","Naomi","Carol","Josephine",
-    "Geoffrey","Jacob","Faith","Erick","Spencer",
-    "Evans","Miriam","Brian"
+    "Geoffrey","Jacob","Faith","Erick","Spencer","Evans","Miriam","Brian"
 ]
 
-REGIONS = ["Eldoret", "Nairobi", "Mombasa", "Meru"]
-HOSPITALS = ["MTRH", "Kijabe", "Nairobi Hosp", "Mombasa Hosp", "Meru Hosp"]
-
-# -----------------------------
+# =========================================================
 # LOAD DATA
-# -----------------------------
+# =========================================================
 def load_data():
     if DATA_FILE.exists():
         df = pd.read_csv(DATA_FILE)
@@ -68,13 +62,13 @@ def load_data():
 if "df" not in st.session_state:
     st.session_state.df = load_data()
 
-def save_data():
+def save():
     st.session_state.df.to_csv(DATA_FILE, index=False)
 
-# -----------------------------
-# CLEAN DATA (CRITICAL FIX)
-# -----------------------------
-def clean(df):
+# =========================================================
+# CLEAN + ENGINEERING
+# =========================================================
+def process(df):
     if df.empty:
         return df
 
@@ -82,195 +76,192 @@ def clean(df):
     df["Revenue"] = df["Procedure"].map(VALUE)
     df["Cost"] = df["Procedure"].map(COST)
     df["Profit"] = df["Revenue"] - df["Cost"]
-    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+
+    # Doctor performance score
+    df["Doctor_Score"] = (
+        df["Outcome"] * 0.4 +
+        (df["Revenue"] / 100000) * 0.3 +
+        (df["Profit"] / 100000) * 0.3
+    )
 
     return df
 
-# -----------------------------
-# GENERATE DEMO DATA
-# -----------------------------
-def generate_data(n=300):
-    rows = []
-    for _ in range(n):
-        p = random.choice(PROCEDURES)
-        rows.append({
-            "Date": datetime.today() - timedelta(days=random.randint(0, 365)),
-            "Region": random.choice(REGIONS),
-            "Hospital": random.choice(HOSPITALS),
-            "Procedure": p,
-            "Rep": random.choice(REPS),
-            "Outcome": random.randint(65, 100)
-        })
+df = process(st.session_state.df)
 
-    return clean(pd.DataFrame(rows))
+# =========================================================
+# AI ENGINE
+# =========================================================
+def ai_assistant(df, query):
+    query = query.lower()
 
-# -----------------------------
-# SIDEBAR NAVIGATION
-# -----------------------------
+    if df.empty:
+        return "No data available."
+
+    # TOP DOCTOR
+    if "best doctor" in query or "top doctor" in query:
+        doc = df.groupby("Doctor")["Doctor_Score"].mean().sort_values(ascending=False).head(1)
+        return f"Top doctor: {doc.index[0]} (Score: {doc.values[0]:.2f})"
+
+    # REVENUE
+    if "revenue" in query:
+        return f"Total revenue: KES {df['Revenue'].sum():,.0f}"
+
+    # PROFIT
+    if "profit" in query:
+        return f"Total profit: KES {df['Profit'].sum():,.0f}"
+
+    # REGION
+    if "region" in query:
+        r = df.groupby("Region")["Revenue"].sum().sort_values(ascending=False)
+        return f"Best region: {r.index[0]} (KES {r.iloc[0]:,.0f})"
+
+    # DOCTORS LOW
+    if "worst" in query or "low" in query:
+        doc = df.groupby("Doctor")["Doctor_Score"].mean().sort_values().head(1)
+        return f"Lowest doctor: {doc.index[0]} (Score: {doc.values[0]:.2f})"
+
+    # CASE MIX
+    if "trauma" in query or "arthroplasty" in query:
+        t = len(df[df["Category"]=="Trauma"])
+        a = len(df[df["Category"]=="Arthroplasty"])
+        return f"Trauma: {t}, Arthroplasty: {a}"
+
+    return "Ask about: doctors, revenue, profit, regions, performance."
+
+# =========================================================
+# NAVIGATION
+# =========================================================
 page = st.sidebar.radio(
     "Navigation",
-    ["📊 Dashboard", "➕ Add Procedure", "🧪 Data Tools"]
+    ["📊 Dashboard","👨‍⚕️ Doctors","📁 Upload Data","🤖 AI Assistant","📑 Reports"]
 )
 
-df = clean(st.session_state.df)
+# =========================================================
+# 📁 UPLOAD DATA
+# =========================================================
+if page == "📁 Upload Data":
+    st.title("📁 Upload Real Hospital Data")
 
-# =============================
-# ➕ ADD PROCEDURE (FIXED)
-# =============================
-if page == "➕ Add Procedure":
-    st.title("➕ Add New Procedure")
+    file = st.file_uploader("Upload CSV or Excel")
 
-    with st.form("add_form"):
-        col1, col2 = st.columns(2)
+    if file:
+        if file.name.endswith(".csv"):
+            new_df = pd.read_csv(file)
+        else:
+            new_df = pd.read_excel(file)
 
-        with col1:
-            date = st.date_input("Date", value=datetime.today())
-            region = st.selectbox("Region", REGIONS)
-            hospital = st.selectbox("Hospital", HOSPITALS)
-            procedure = st.selectbox("Procedure", PROCEDURES)
-
-        with col2:
-            rep = st.selectbox("Sales Rep", REPS)
-            outcome = st.slider("Outcome (0–100)", 0, 100, 80)
-
-        submitted = st.form_submit_button("💾 Save Procedure")
-
-    if submitted:
-        new_row = pd.DataFrame([{
-            "Date": date,
-            "Region": region,
-            "Hospital": hospital,
-            "Procedure": procedure,
-            "Rep": rep,
-            "Outcome": outcome
-        }])
-
-        updated_df = pd.concat([df, new_row], ignore_index=True)
-        updated_df = clean(updated_df)
-
-        st.session_state.df = updated_df
-        save_data()
-
-        st.success("✅ Procedure added successfully")
-        st.rerun()
-
-# =============================
-# 🧪 DATA TOOLS
-# =============================
-elif page == "🧪 Data Tools":
-    st.title("🧪 Data Tools")
-
-    if st.button("Generate 300 Demo Records"):
-        st.session_state.df = generate_data(300)
-        save_data()
-        st.success("Demo data generated")
-        st.rerun()
-
-    upload = st.file_uploader("Upload CSV")
-
-    if upload:
-        new_df = pd.read_csv(upload)
         st.session_state.df = pd.concat([df, new_df], ignore_index=True)
-        st.session_state.df = clean(st.session_state.df)
-        save_data()
-        st.success("File uploaded successfully")
-        st.rerun()
+        st.session_state.df = process(st.session_state.df)
+        save()
 
-# =============================
+        st.success("Data uploaded successfully")
+        st.dataframe(st.session_state.df.head())
+
+# =========================================================
 # 📊 DASHBOARD
-# =============================
+# =========================================================
 elif page == "📊 Dashboard":
     st.title("📊 Executive Dashboard")
 
     if df.empty:
-        st.warning("No data available. Add or generate data.")
+        st.warning("No data available")
         st.stop()
 
-    # -------------------------
     # FILTERS
-    # -------------------------
     st.sidebar.subheader("Filters")
 
-    region_f = st.sidebar.multiselect("Region", df["Region"].unique(), df["Region"].unique())
-    rep_f = st.sidebar.multiselect("Rep", df["Rep"].unique(), df["Rep"].unique())
-    hosp_f = st.sidebar.multiselect("Hospital", df["Hospital"].unique(), df["Hospital"].unique())
+    region_f = st.sidebar.multiselect("Region", df["Region"].dropna().unique(), df["Region"].dropna().unique())
+    rep_f = st.sidebar.multiselect("Doctor", df["Doctor"].dropna().unique(), df["Doctor"].dropna().unique())
 
-    df = df[
-        df["Region"].isin(region_f) &
-        df["Rep"].isin(rep_f) &
-        df["Hospital"].isin(hosp_f)
-    ]
+    df_f = df[df["Region"].isin(region_f) & df["Doctor"].isin(rep_f)]
 
-    # -------------------------
     # KPIs
-    # -------------------------
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Procedures", len(df))
-    c2.metric("Revenue", f"KES {df['Revenue'].sum():,.0f}")
-    c3.metric("Profit", f"KES {df['Profit'].sum():,.0f}")
-    c4.metric("Outcome", f"{df['Outcome'].mean():.1f}")
+    c1.metric("Cases", len(df_f))
+    c2.metric("Revenue", f"KES {df_f['Revenue'].sum():,.0f}")
+    c3.metric("Profit", f"KES {df_f['Profit'].sum():,.0f}")
+    c4.metric("Avg Outcome", f"{df_f['Outcome'].mean():.1f}")
 
     st.divider()
 
-    # -------------------------
     # TREND
-    # -------------------------
-    st.subheader("📈 Monthly Trend")
+    st.subheader("📈 Trend")
+    df_f["Month"] = df_f["Date"].dt.to_period("M").astype(str)
+    st.line_chart(df_f.groupby("Month").size())
 
-    df["Month"] = df["Date"].dt.to_period("M").astype(str)
-    trend = df.groupby("Month").size()
+    # TOP DOCTORS
+    st.subheader("👨‍⚕️ Top Doctors")
 
-    st.line_chart(trend)
+    doc = df_f.groupby("Doctor").agg({
+        "Revenue":"sum",
+        "Profit":"sum",
+        "Doctor_Score":"mean",
+        "Outcome":"mean"
+    }).sort_values("Doctor_Score", ascending=False)
 
-    # -------------------------
-    # TOP PERFORMERS
-    # -------------------------
-    st.subheader("🏆 Top Performers")
+    st.dataframe(doc)
 
-    rep_perf = df.groupby("Rep").agg({
-        "Procedure": "count",
-        "Revenue": "sum"
-    }).rename(columns={"Procedure": "Cases"}).sort_values("Revenue", ascending=False)
-
-    hosp_perf = df.groupby("Hospital").agg({
-        "Procedure": "count",
-        "Revenue": "sum"
-    }).rename(columns={"Procedure": "Cases"}).sort_values("Revenue", ascending=False)
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.write("👥 Top Reps")
-        st.dataframe(rep_perf.head(5))
-
-    with col2:
-        st.write("🏥 Top Hospitals")
-        st.dataframe(hosp_perf.head(5))
-
-    # -------------------------
     # INSIGHTS
-    # -------------------------
-    st.subheader("🧠 Executive Insights")
+    st.subheader("🧠 Insights")
 
-    insights = []
+    if df_f["Outcome"].mean() < 75:
+        st.warning("Clinical outcomes below target")
 
-    if df["Outcome"].mean() < 75:
-        insights.append("⚠️ Clinical outcomes are below target.")
+    top = doc.index[0]
+    st.success(f"Top performer: {top}")
 
-    if len(df[df["Category"] == "Trauma"]) > len(df[df["Category"] == "Arthroplasty"]) * 2:
-        insights.append("⚠️ Over-reliance on trauma procedures.")
+# =========================================================
+# 👨‍⚕️ DOCTOR MODULE
+# =========================================================
+elif page == "👨‍⚕️ Doctors":
+    st.title("👨‍⚕️ Doctor Performance System")
 
-    if insights:
-        for i in insights:
-            st.warning(i)
-    else:
-        st.success("All key indicators are within expected range.")
+    doc = df.groupby("Doctor").agg({
+        "Revenue":"sum",
+        "Profit":"sum",
+        "Outcome":"mean",
+        "Doctor_Score":"mean",
+        "Hospital":"count"
+    }).rename(columns={"Hospital":"Cases"}).sort_values("Doctor_Score", ascending=False)
 
-    # -------------------------
-    # DOWNLOAD
-    # -------------------------
+    st.dataframe(doc)
+
+    st.subheader("🏆 Top 5 Doctors")
+    st.dataframe(doc.head(5))
+
+    st.subheader("⚠️ Bottom 5 Doctors")
+    st.dataframe(doc.tail(5))
+
+# =========================================================
+# 🤖 AI ASSISTANT
+# =========================================================
+elif page == "🤖 AI Assistant":
+    st.title("🤖 AI Decision Assistant")
+
+    st.info("Ask questions like: best doctor, revenue, profit, region performance, etc.")
+
+    q = st.text_input("Ask something")
+
+    if st.button("Analyze"):
+        answer = ai_assistant(df, q)
+        st.success(answer)
+
+# =========================================================
+# 📑 REPORTS
+# =========================================================
+elif page == "📑 Reports":
+    st.title("📑 Executive Reports")
+
+    report = df.groupby(["Region","Doctor"]).agg({
+        "Revenue":"sum",
+        "Profit":"sum",
+        "Outcome":"mean"
+    })
+
+    st.dataframe(report)
+
     st.download_button(
-        "⬇️ Download Executive Report",
-        df.to_csv(index=False),
+        "⬇️ Download Report",
+        report.to_csv().encode("utf-8"),
         "executive_report.csv"
     )
