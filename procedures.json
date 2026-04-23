@@ -1,0 +1,5714 @@
+[
+  {
+    "id": "20230106000000211",
+    "date": "2023-01-06",
+    "invoice": "INV-2023-2298",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.784493"
+  },
+  {
+    "id": "20230107000000285",
+    "date": "2023-01-07",
+    "invoice": "INV-2023-5272",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.785448"
+  },
+  {
+    "id": "20230109000000255",
+    "date": "2023-01-09",
+    "invoice": "INV-2023-2761",
+    "rep": "James Mwangi",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.785056"
+  },
+  {
+    "id": "20230115000000118",
+    "date": "2023-01-15",
+    "invoice": "INV-2023-7684",
+    "rep": "James Mwangi",
+    "facility": "Nakuru Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.783398"
+  },
+  {
+    "id": "2023011800000091",
+    "date": "2023-01-18",
+    "invoice": "INV-2023-2524",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.783012"
+  },
+  {
+    "id": "2023012200000024",
+    "date": "2023-01-22",
+    "invoice": "INV-2023-4770",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.782170"
+  },
+  {
+    "id": "20230127000000237",
+    "date": "2023-01-27",
+    "invoice": "INV-2023-6912",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.784790"
+  },
+  {
+    "id": "20230128000000208",
+    "date": "2023-01-28",
+    "invoice": "INV-2023-7797",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.784464"
+  },
+  {
+    "id": "2023013000000074",
+    "date": "2023-01-30",
+    "invoice": "INV-2023-7371",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.782833"
+  },
+  {
+    "id": "20230130000000245",
+    "date": "2023-01-30",
+    "invoice": "INV-2023-1744",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.784956"
+  },
+  {
+    "id": "20230201000000246",
+    "date": "2023-02-01",
+    "invoice": "INV-2023-9159",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "None",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.784966"
+  },
+  {
+    "id": "2023020200000010",
+    "date": "2023-02-02",
+    "invoice": "INV-2023-6168",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.781996"
+  },
+  {
+    "id": "2023020200000025",
+    "date": "2023-02-02",
+    "invoice": "INV-2023-6413",
+    "rep": "Caroline Njeri",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Middle East",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.782208"
+  },
+  {
+    "id": "2023021100000079",
+    "date": "2023-02-11",
+    "invoice": "INV-2023-1508",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.782890"
+  },
+  {
+    "id": "20230216000000177",
+    "date": "2023-02-16",
+    "invoice": "INV-2023-4612",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.784045"
+  },
+  {
+    "id": "20230221000000251",
+    "date": "2023-02-21",
+    "invoice": "INV-2023-5754",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Ankle Replacement",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.785017"
+  },
+  {
+    "id": "2023022200000044",
+    "date": "2023-02-22",
+    "invoice": "INV-2023-2512",
+    "rep": "Sharon Wanjiku",
+    "facility": "Nairobi Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.782422"
+  },
+  {
+    "id": "20230224000000333",
+    "date": "2023-02-24",
+    "invoice": "INV-2023-2600",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.786006"
+  },
+  {
+    "id": "20230226000000241",
+    "date": "2023-02-26",
+    "invoice": "INV-2023-3034",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.784911"
+  },
+  {
+    "id": "2023030200000032",
+    "date": "2023-03-02",
+    "invoice": "INV-2023-3697",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.782297"
+  },
+  {
+    "id": "20230306000000220",
+    "date": "2023-03-06",
+    "invoice": "INV-2023-8498",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.784607"
+  },
+  {
+    "id": "20230310000000229",
+    "date": "2023-03-10",
+    "invoice": "INV-2023-4866",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.784698"
+  },
+  {
+    "id": "20230310000000302",
+    "date": "2023-03-10",
+    "invoice": "INV-2023-2653",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Total Hip Replacement"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.785653"
+  },
+  {
+    "id": "20230311000000188",
+    "date": "2023-03-11",
+    "invoice": "INV-2023-8682",
+    "rep": "Caroline Njeri",
+    "facility": "AAR Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.784195"
+  },
+  {
+    "id": "2023031200000084",
+    "date": "2023-03-12",
+    "invoice": "INV-2023-9289",
+    "rep": "Caroline Njeri",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Middle East",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.782939"
+  },
+  {
+    "id": "20230317000000189",
+    "date": "2023-03-17",
+    "invoice": "INV-2023-8565",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.784214"
+  },
+  {
+    "id": "2023031900000030",
+    "date": "2023-03-19",
+    "invoice": "INV-2023-8260",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.782277"
+  },
+  {
+    "id": "202303220000005",
+    "date": "2023-03-22",
+    "invoice": "INV-2023-5803",
+    "rep": "James Mwangi",
+    "facility": "Nakuru Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.781925"
+  },
+  {
+    "id": "20230328000000197",
+    "date": "2023-03-28",
+    "invoice": "INV-2023-6072",
+    "rep": "Sharon Wanjiku",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Southern Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "None",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.784314"
+  },
+  {
+    "id": "2023033000000087",
+    "date": "2023-03-30",
+    "invoice": "INV-2023-5569",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.782973"
+  },
+  {
+    "id": "20230330000000238",
+    "date": "2023-03-30",
+    "invoice": "INV-2023-2077",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "None",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.784806"
+  },
+  {
+    "id": "20230330000000284",
+    "date": "2023-03-30",
+    "invoice": "INV-2023-7567",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.785432"
+  },
+  {
+    "id": "20230402000000278",
+    "date": "2023-04-02",
+    "invoice": "INV-2023-4804",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.785366"
+  },
+  {
+    "id": "20230403000000190",
+    "date": "2023-04-03",
+    "invoice": "INV-2023-9307",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.784233"
+  },
+  {
+    "id": "20230416000000192",
+    "date": "2023-04-16",
+    "invoice": "INV-2023-6626",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Proximal Femur Replacement",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.784257"
+  },
+  {
+    "id": "20230423000000263",
+    "date": "2023-04-23",
+    "invoice": "INV-2023-7824",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.785153"
+  },
+  {
+    "id": "2023042500000046",
+    "date": "2023-04-25",
+    "invoice": "INV-2023-2232",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.782441"
+  },
+  {
+    "id": "20230425000000291",
+    "date": "2023-04-25",
+    "invoice": "INV-2023-2011",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.785539"
+  },
+  {
+    "id": "20230427000000176",
+    "date": "2023-04-27",
+    "invoice": "INV-2023-6655",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.784030"
+  },
+  {
+    "id": "20230429000000114",
+    "date": "2023-04-29",
+    "invoice": "INV-2023-7622",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.783354"
+  },
+  {
+    "id": "20230429000000148",
+    "date": "2023-04-29",
+    "invoice": "INV-2023-2592",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.783733"
+  },
+  {
+    "id": "20230506000000167",
+    "date": "2023-05-06",
+    "invoice": "INV-2023-7730",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.783930"
+  },
+  {
+    "id": "2023051100000047",
+    "date": "2023-05-11",
+    "invoice": "INV-2023-1685",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.782453"
+  },
+  {
+    "id": "2023051100000075",
+    "date": "2023-05-11",
+    "invoice": "INV-2023-9751",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.782845"
+  },
+  {
+    "id": "20230514000000155",
+    "date": "2023-05-14",
+    "invoice": "INV-2023-9850",
+    "rep": "Sharon Wanjiku",
+    "facility": "Nairobi Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.783803"
+  },
+  {
+    "id": "2023051500000038",
+    "date": "2023-05-15",
+    "invoice": "INV-2023-5915",
+    "rep": "Sharon Wanjiku",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Southern Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.782360"
+  },
+  {
+    "id": "2023051600000026",
+    "date": "2023-05-16",
+    "invoice": "INV-2023-8744",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.782227"
+  },
+  {
+    "id": "20230518000000281",
+    "date": "2023-05-18",
+    "invoice": "INV-2023-9261",
+    "rep": "Sharon Wanjiku",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Southern Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.785396"
+  },
+  {
+    "id": "2023051900000076",
+    "date": "2023-05-19",
+    "invoice": "INV-2023-8564",
+    "rep": "James Mwangi",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.782857"
+  },
+  {
+    "id": "20230519000000297",
+    "date": "2023-05-19",
+    "invoice": "INV-2023-7887",
+    "rep": "Faith Otieno",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.785601"
+  },
+  {
+    "id": "20230520000000121",
+    "date": "2023-05-20",
+    "invoice": "INV-2023-2143",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.783428"
+  },
+  {
+    "id": "20230521000000178",
+    "date": "2023-05-21",
+    "invoice": "INV-2023-5186",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.784055"
+  },
+  {
+    "id": "20230521000000210",
+    "date": "2023-05-21",
+    "invoice": "INV-2023-1627",
+    "rep": "James Mwangi",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.784483"
+  },
+  {
+    "id": "20230527000000305",
+    "date": "2023-05-27",
+    "invoice": "INV-2023-9540",
+    "rep": "Caroline Njeri",
+    "facility": "AAR Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.785683"
+  },
+  {
+    "id": "2023060400000070",
+    "date": "2023-06-04",
+    "invoice": "INV-2023-4788",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.782793"
+  },
+  {
+    "id": "20230607000000119",
+    "date": "2023-06-07",
+    "invoice": "INV-2023-9165",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.783408"
+  },
+  {
+    "id": "20230607000000351",
+    "date": "2023-06-07",
+    "invoice": "INV-2023-7932",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.786260"
+  },
+  {
+    "id": "20230608000000200",
+    "date": "2023-06-08",
+    "invoice": "INV-2023-2264",
+    "rep": "Brian Koech",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.784348"
+  },
+  {
+    "id": "20230608000000301",
+    "date": "2023-06-08",
+    "invoice": "INV-2023-5516",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.785640"
+  },
+  {
+    "id": "20230615000000205",
+    "date": "2023-06-15",
+    "invoice": "INV-2023-4271",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.784428"
+  },
+  {
+    "id": "20230622000000244",
+    "date": "2023-06-22",
+    "invoice": "INV-2023-3526",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.784945"
+  },
+  {
+    "id": "20230629000000179",
+    "date": "2023-06-29",
+    "invoice": "INV-2023-3116",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.784066"
+  },
+  {
+    "id": "20230630000000279",
+    "date": "2023-06-30",
+    "invoice": "INV-2023-1595",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.785376"
+  },
+  {
+    "id": "2023070300000096",
+    "date": "2023-07-03",
+    "invoice": "INV-2023-5952",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.783073"
+  },
+  {
+    "id": "20230712000000115",
+    "date": "2023-07-12",
+    "invoice": "INV-2023-9494",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.783363"
+  },
+  {
+    "id": "2023071400000029",
+    "date": "2023-07-14",
+    "invoice": "INV-2023-9786",
+    "rep": "James Mwangi",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.782265"
+  },
+  {
+    "id": "20230716000000325",
+    "date": "2023-07-16",
+    "invoice": "INV-2023-9625",
+    "rep": "Brian Koech",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.785922"
+  },
+  {
+    "id": "20230720000000344",
+    "date": "2023-07-20",
+    "invoice": "INV-2023-8501",
+    "rep": "Faith Otieno",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "None",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.786141"
+  },
+  {
+    "id": "20230728000000116",
+    "date": "2023-07-28",
+    "invoice": "INV-2023-5375",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.783376"
+  },
+  {
+    "id": "202308090000003",
+    "date": "2023-08-09",
+    "invoice": "INV-2023-6514",
+    "rep": "James Mwangi",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.781900"
+  },
+  {
+    "id": "20230809000000163",
+    "date": "2023-08-09",
+    "invoice": "INV-2023-8046",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.783886"
+  },
+  {
+    "id": "20230809000000173",
+    "date": "2023-08-09",
+    "invoice": "INV-2023-7163",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.783991"
+  },
+  {
+    "id": "20230810000000154",
+    "date": "2023-08-10",
+    "invoice": "INV-2023-4817",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.783793"
+  },
+  {
+    "id": "202308120000001",
+    "date": "2023-08-12",
+    "invoice": "INV-2023-4811",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.781874"
+  },
+  {
+    "id": "20230818000000169",
+    "date": "2023-08-18",
+    "invoice": "INV-2023-2773",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.783951"
+  },
+  {
+    "id": "202308220000006",
+    "date": "2023-08-22",
+    "invoice": "INV-2023-5741",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.781936"
+  },
+  {
+    "id": "20230828000000304",
+    "date": "2023-08-28",
+    "invoice": "INV-2023-6224",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.785673"
+  },
+  {
+    "id": "2023082900000062",
+    "date": "2023-08-29",
+    "invoice": "INV-2023-6085",
+    "rep": "Faith Otieno",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.782613"
+  },
+  {
+    "id": "20230830000000151",
+    "date": "2023-08-30",
+    "invoice": "INV-2023-6942",
+    "rep": "Dennis Kiplangat",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.783763"
+  },
+  {
+    "id": "2023083100000049",
+    "date": "2023-08-31",
+    "invoice": "INV-2023-3662",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.782473"
+  },
+  {
+    "id": "2023090700000064",
+    "date": "2023-09-07",
+    "invoice": "INV-2023-3417",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.782641"
+  },
+  {
+    "id": "20230909000000318",
+    "date": "2023-09-09",
+    "invoice": "INV-2023-9180",
+    "rep": "Dennis Kiplangat",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.785825"
+  },
+  {
+    "id": "2023091100000068",
+    "date": "2023-09-11",
+    "invoice": "INV-2023-5543",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.782773"
+  },
+  {
+    "id": "2023091300000048",
+    "date": "2023-09-13",
+    "invoice": "INV-2023-2684",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.782463"
+  },
+  {
+    "id": "20230920000000186",
+    "date": "2023-09-20",
+    "invoice": "INV-2023-4232",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.784146"
+  },
+  {
+    "id": "20230928000000103",
+    "date": "2023-09-28",
+    "invoice": "INV-2023-2330",
+    "rep": "Caroline Njeri",
+    "facility": "AAR Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.783170"
+  },
+  {
+    "id": "2023092900000054",
+    "date": "2023-09-29",
+    "invoice": "INV-2023-1626",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.782531"
+  },
+  {
+    "id": "20231010000000152",
+    "date": "2023-10-10",
+    "invoice": "INV-2023-4109",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.783773"
+  },
+  {
+    "id": "20231013000000270",
+    "date": "2023-10-13",
+    "invoice": "INV-2023-5890",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.785259"
+  },
+  {
+    "id": "2023101600000043",
+    "date": "2023-10-16",
+    "invoice": "INV-2023-4450",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.782412"
+  },
+  {
+    "id": "20231017000000105",
+    "date": "2023-10-17",
+    "invoice": "INV-2023-8438",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.783218"
+  },
+  {
+    "id": "20231017000000122",
+    "date": "2023-10-17",
+    "invoice": "INV-2023-5891",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Proximal Femur Replacement",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.783438"
+  },
+  {
+    "id": "20231019000000203",
+    "date": "2023-10-19",
+    "invoice": "INV-2023-8355",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.784402"
+  },
+  {
+    "id": "20231021000000139",
+    "date": "2023-10-21",
+    "invoice": "INV-2023-6772",
+    "rep": "James Mwangi",
+    "facility": "Nakuru Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.783626"
+  },
+  {
+    "id": "20231022000000130",
+    "date": "2023-10-22",
+    "invoice": "INV-2023-4727",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.783530"
+  },
+  {
+    "id": "20231022000000273",
+    "date": "2023-10-22",
+    "invoice": "INV-2023-2294",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.785307"
+  },
+  {
+    "id": "20231023000000257",
+    "date": "2023-10-23",
+    "invoice": "INV-2023-2204",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.785080"
+  },
+  {
+    "id": "2023103000000058",
+    "date": "2023-10-30",
+    "invoice": "INV-2023-3085",
+    "rep": "Dennis Kiplangat",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.782573"
+  },
+  {
+    "id": "20231030000000141",
+    "date": "2023-10-30",
+    "invoice": "INV-2023-6352",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.783646"
+  },
+  {
+    "id": "20231030000000226",
+    "date": "2023-10-30",
+    "invoice": "INV-2023-6021",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.784666"
+  },
+  {
+    "id": "20231030000000336",
+    "date": "2023-10-30",
+    "invoice": "INV-2023-5037",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.786036"
+  },
+  {
+    "id": "20231103000000131",
+    "date": "2023-11-03",
+    "invoice": "INV-2023-1474",
+    "rep": "Faith Otieno",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.783540"
+  },
+  {
+    "id": "20231103000000343",
+    "date": "2023-11-03",
+    "invoice": "INV-2023-8933",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.786130"
+  },
+  {
+    "id": "2023110500000059",
+    "date": "2023-11-05",
+    "invoice": "INV-2023-7653",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "None",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.782582"
+  },
+  {
+    "id": "2023110500000083",
+    "date": "2023-11-05",
+    "invoice": "INV-2023-2983",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.782929"
+  },
+  {
+    "id": "20231105000000342",
+    "date": "2023-11-05",
+    "invoice": "INV-2023-5397",
+    "rep": "Caroline Njeri",
+    "facility": "AAR Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.786113"
+  },
+  {
+    "id": "20231112000000253",
+    "date": "2023-11-12",
+    "invoice": "INV-2023-9148",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Proximal Femur Replacement",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.785037"
+  },
+  {
+    "id": "20231116000000168",
+    "date": "2023-11-16",
+    "invoice": "INV-2023-6761",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.783942"
+  },
+  {
+    "id": "20231118000000231",
+    "date": "2023-11-18",
+    "invoice": "INV-2023-5566",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.784721"
+  },
+  {
+    "id": "20231120000000221",
+    "date": "2023-11-20",
+    "invoice": "INV-2023-6080",
+    "rep": "James Mwangi",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.784617"
+  },
+  {
+    "id": "20231123000000249",
+    "date": "2023-11-23",
+    "invoice": "INV-2023-6658",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.784998"
+  },
+  {
+    "id": "20231123000000250",
+    "date": "2023-11-23",
+    "invoice": "INV-2023-4960",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.785007"
+  },
+  {
+    "id": "20231123000000307",
+    "date": "2023-11-23",
+    "invoice": "INV-2023-7821",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.785711"
+  },
+  {
+    "id": "20231126000000124",
+    "date": "2023-11-26",
+    "invoice": "INV-2023-4090",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.783460"
+  },
+  {
+    "id": "20231126000000161",
+    "date": "2023-11-26",
+    "invoice": "INV-2023-3430",
+    "rep": "Faith Otieno",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Ankle Replacement",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.783866"
+  },
+  {
+    "id": "20231129000000174",
+    "date": "2023-11-29",
+    "invoice": "INV-2023-2391",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.784001"
+  },
+  {
+    "id": "2023120100000077",
+    "date": "2023-12-01",
+    "invoice": "INV-2023-6529",
+    "rep": "Brian Koech",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.782870"
+  },
+  {
+    "id": "2023120500000071",
+    "date": "2023-12-05",
+    "invoice": "INV-2023-9890",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.782803"
+  },
+  {
+    "id": "20231206000000126",
+    "date": "2023-12-06",
+    "invoice": "INV-2023-2644",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.783481"
+  },
+  {
+    "id": "20231207000000312",
+    "date": "2023-12-07",
+    "invoice": "INV-2023-5967",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.785761"
+  },
+  {
+    "id": "20231208000000153",
+    "date": "2023-12-08",
+    "invoice": "INV-2023-4990",
+    "rep": "Faith Otieno",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Total Hip Replacement"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.783783"
+  },
+  {
+    "id": "20231211000000201",
+    "date": "2023-12-11",
+    "invoice": "INV-2023-3147",
+    "rep": "Dennis Kiplangat",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "East Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.784366"
+  },
+  {
+    "id": "20231213000000143",
+    "date": "2023-12-13",
+    "invoice": "INV-2023-2886",
+    "rep": "Dennis Kiplangat",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.783666"
+  },
+  {
+    "id": "2023121500000016",
+    "date": "2023-12-15",
+    "invoice": "INV-2023-2827",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.782081"
+  },
+  {
+    "id": "20231217000000269",
+    "date": "2023-12-17",
+    "invoice": "INV-2023-9950",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.785249"
+  },
+  {
+    "id": "2023122400000040",
+    "date": "2023-12-24",
+    "invoice": "INV-2023-2127",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Proximal Femur Replacement",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.782382"
+  },
+  {
+    "id": "20231231000000335",
+    "date": "2023-12-31",
+    "invoice": "INV-2023-7150",
+    "rep": "Sharon Wanjiku",
+    "facility": "Nairobi Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.786026"
+  },
+  {
+    "id": "2024010600000085",
+    "date": "2024-01-06",
+    "invoice": "INV-2024-8532",
+    "rep": "Sharon Wanjiku",
+    "facility": "Nairobi Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.782949"
+  },
+  {
+    "id": "20240106000000158",
+    "date": "2024-01-06",
+    "invoice": "INV-2024-9408",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.783836"
+  },
+  {
+    "id": "20240107000000199",
+    "date": "2024-01-07",
+    "invoice": "INV-2024-6060",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.784334"
+  },
+  {
+    "id": "20240110000000256",
+    "date": "2024-01-10",
+    "invoice": "INV-2024-1741",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.785066"
+  },
+  {
+    "id": "2024011300000092",
+    "date": "2024-01-13",
+    "invoice": "INV-2024-8753",
+    "rep": "Dennis Kiplangat",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.783021"
+  },
+  {
+    "id": "20240113000000145",
+    "date": "2024-01-13",
+    "invoice": "INV-2024-5295",
+    "rep": "Faith Otieno",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.783688"
+  },
+  {
+    "id": "20240115000000230",
+    "date": "2024-01-15",
+    "invoice": "INV-2024-7095",
+    "rep": "Sharon Wanjiku",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Southern Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.784710"
+  },
+  {
+    "id": "20240115000000316",
+    "date": "2024-01-15",
+    "invoice": "INV-2024-6126",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.785800"
+  },
+  {
+    "id": "20240116000000206",
+    "date": "2024-01-16",
+    "invoice": "INV-2024-2680",
+    "rep": "Caroline Njeri",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Middle East",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.784441"
+  },
+  {
+    "id": "20240117000000166",
+    "date": "2024-01-17",
+    "invoice": "INV-2024-3131",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.783918"
+  },
+  {
+    "id": "2024011800000023",
+    "date": "2024-01-18",
+    "invoice": "INV-2024-8177",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.782160"
+  },
+  {
+    "id": "20240118000000217",
+    "date": "2024-01-18",
+    "invoice": "INV-2024-5155",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.784575"
+  },
+  {
+    "id": "20240119000000209",
+    "date": "2024-01-19",
+    "invoice": "INV-2024-4678",
+    "rep": "James Mwangi",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.784474"
+  },
+  {
+    "id": "2024012000000082",
+    "date": "2024-01-20",
+    "invoice": "INV-2024-7498",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "None",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.782919"
+  },
+  {
+    "id": "20240122000000311",
+    "date": "2024-01-22",
+    "invoice": "INV-2024-1647",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.785750"
+  },
+  {
+    "id": "202401240000009",
+    "date": "2024-01-24",
+    "invoice": "INV-2024-5422",
+    "rep": "Caroline Njeri",
+    "facility": "AAR Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.781979"
+  },
+  {
+    "id": "20240124000000327",
+    "date": "2024-01-24",
+    "invoice": "INV-2024-7179",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.785944"
+  },
+  {
+    "id": "20240126000000137",
+    "date": "2024-01-26",
+    "invoice": "INV-2024-6881",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.783605"
+  },
+  {
+    "id": "2024020400000073",
+    "date": "2024-02-04",
+    "invoice": "INV-2024-7865",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.782823"
+  },
+  {
+    "id": "20240207000000299",
+    "date": "2024-02-07",
+    "invoice": "INV-2024-9664",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.785620"
+  },
+  {
+    "id": "20240207000000348",
+    "date": "2024-02-07",
+    "invoice": "INV-2024-6980",
+    "rep": "Caroline Njeri",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Middle East",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.786223"
+  },
+  {
+    "id": "20240210000000138",
+    "date": "2024-02-10",
+    "invoice": "INV-2024-5497",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Total Hip Replacement"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.783615"
+  },
+  {
+    "id": "20240212000000128",
+    "date": "2024-02-12",
+    "invoice": "INV-2024-2315",
+    "rep": "Faith Otieno",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "None",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.783505"
+  },
+  {
+    "id": "20240215000000172",
+    "date": "2024-02-15",
+    "invoice": "INV-2024-2140",
+    "rep": "Sharon Wanjiku",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Southern Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "None",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.783981"
+  },
+  {
+    "id": "20240215000000183",
+    "date": "2024-02-15",
+    "invoice": "INV-2024-9584",
+    "rep": "Sharon Wanjiku",
+    "facility": "Nairobi Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.784108"
+  },
+  {
+    "id": "20240216000000160",
+    "date": "2024-02-16",
+    "invoice": "INV-2024-7984",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.783856"
+  },
+  {
+    "id": "20240216000000303",
+    "date": "2024-02-16",
+    "invoice": "INV-2024-8191",
+    "rep": "Caroline Njeri",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Middle East",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.785663"
+  },
+  {
+    "id": "20240220000000228",
+    "date": "2024-02-20",
+    "invoice": "INV-2024-6952",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.784688"
+  },
+  {
+    "id": "2024022100000090",
+    "date": "2024-02-21",
+    "invoice": "INV-2024-9004",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.783002"
+  },
+  {
+    "id": "20240223000000104",
+    "date": "2024-02-23",
+    "invoice": "INV-2024-8381",
+    "rep": "Brian Koech",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.783200"
+  },
+  {
+    "id": "20240223000000112",
+    "date": "2024-02-23",
+    "invoice": "INV-2024-6460",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.783325"
+  },
+  {
+    "id": "20240224000000127",
+    "date": "2024-02-24",
+    "invoice": "INV-2024-3529",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Ankle Replacement",
+    "implants": [
+      "Total Hip Replacement"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.783495"
+  },
+  {
+    "id": "20240224000000239",
+    "date": "2024-02-24",
+    "invoice": "INV-2024-2208",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.784817"
+  },
+  {
+    "id": "2024022600000050",
+    "date": "2024-02-26",
+    "invoice": "INV-2024-5065",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.782484"
+  },
+  {
+    "id": "20240227000000321",
+    "date": "2024-02-27",
+    "invoice": "INV-2024-3252",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.785864"
+  },
+  {
+    "id": "20240302000000215",
+    "date": "2024-03-02",
+    "invoice": "INV-2024-4068",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.784540"
+  },
+  {
+    "id": "2024030500000037",
+    "date": "2024-03-05",
+    "invoice": "INV-2024-9565",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "None",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.782350"
+  },
+  {
+    "id": "20240305000000213",
+    "date": "2024-03-05",
+    "invoice": "INV-2024-8489",
+    "rep": "Faith Otieno",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.784513"
+  },
+  {
+    "id": "20240315000000102",
+    "date": "2024-03-15",
+    "invoice": "INV-2024-6003",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Ankle Replacement",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.783160"
+  },
+  {
+    "id": "20240317000000132",
+    "date": "2024-03-17",
+    "invoice": "INV-2024-3385",
+    "rep": "James Mwangi",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.783553"
+  },
+  {
+    "id": "20240320000000328",
+    "date": "2024-03-20",
+    "invoice": "INV-2024-6427",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.785954"
+  },
+  {
+    "id": "20240324000000193",
+    "date": "2024-03-24",
+    "invoice": "INV-2024-8199",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.784270"
+  },
+  {
+    "id": "20240327000000266",
+    "date": "2024-03-27",
+    "invoice": "INV-2024-6139",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.785202"
+  },
+  {
+    "id": "20240328000000111",
+    "date": "2024-03-28",
+    "invoice": "INV-2024-3973",
+    "rep": "Dennis Kiplangat",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.783307"
+  },
+  {
+    "id": "20240331000000338",
+    "date": "2024-03-31",
+    "invoice": "INV-2024-6896",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.786057"
+  },
+  {
+    "id": "20240401000000293",
+    "date": "2024-04-01",
+    "invoice": "INV-2024-1911",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.785559"
+  },
+  {
+    "id": "202404040000002",
+    "date": "2024-04-04",
+    "invoice": "INV-2024-5557",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.781888"
+  },
+  {
+    "id": "2024040900000093",
+    "date": "2024-04-09",
+    "invoice": "INV-2024-5438",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.783031"
+  },
+  {
+    "id": "20240410000000289",
+    "date": "2024-04-10",
+    "invoice": "INV-2024-7121",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.785514"
+  },
+  {
+    "id": "20240411000000322",
+    "date": "2024-04-11",
+    "invoice": "INV-2024-7114",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "Total Hip Replacement"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.785881"
+  },
+  {
+    "id": "20240414000000282",
+    "date": "2024-04-14",
+    "invoice": "INV-2024-5215",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.785405"
+  },
+  {
+    "id": "20240415000000326",
+    "date": "2024-04-15",
+    "invoice": "INV-2024-4984",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.785931"
+  },
+  {
+    "id": "20240420000000147",
+    "date": "2024-04-20",
+    "invoice": "INV-2024-5951",
+    "rep": "Caroline Njeri",
+    "facility": "AAR Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.783716"
+  },
+  {
+    "id": "20240421000000287",
+    "date": "2024-04-21",
+    "invoice": "INV-2024-6026",
+    "rep": "Dennis Kiplangat",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.785491"
+  },
+  {
+    "id": "2024042600000051",
+    "date": "2024-04-26",
+    "invoice": "INV-2024-4644",
+    "rep": "Dennis Kiplangat",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.782493"
+  },
+  {
+    "id": "2024042600000078",
+    "date": "2024-04-26",
+    "invoice": "INV-2024-1317",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.782880"
+  },
+  {
+    "id": "20240427000000146",
+    "date": "2024-04-27",
+    "invoice": "INV-2024-1410",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.783698"
+  },
+  {
+    "id": "20240428000000120",
+    "date": "2024-04-28",
+    "invoice": "INV-2024-4993",
+    "rep": "Dennis Kiplangat",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.783418"
+  },
+  {
+    "id": "20240428000000276",
+    "date": "2024-04-28",
+    "invoice": "INV-2024-2647",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.785344"
+  },
+  {
+    "id": "2024042900000080",
+    "date": "2024-04-29",
+    "invoice": "INV-2024-2874",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.782900"
+  },
+  {
+    "id": "20240429000000125",
+    "date": "2024-04-29",
+    "invoice": "INV-2024-7246",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.783471"
+  },
+  {
+    "id": "20240429000000308",
+    "date": "2024-04-29",
+    "invoice": "INV-2024-4948",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.785721"
+  },
+  {
+    "id": "20240430000000165",
+    "date": "2024-04-30",
+    "invoice": "INV-2024-2099",
+    "rep": "Sharon Wanjiku",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Southern Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.783908"
+  },
+  {
+    "id": "20240502000000277",
+    "date": "2024-05-02",
+    "invoice": "INV-2024-8822",
+    "rep": "Brian Koech",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.785356"
+  },
+  {
+    "id": "2024050400000099",
+    "date": "2024-05-04",
+    "invoice": "INV-2024-2869",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.783111"
+  },
+  {
+    "id": "20240505000000313",
+    "date": "2024-05-05",
+    "invoice": "INV-2024-4974",
+    "rep": "James Mwangi",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.785771"
+  },
+  {
+    "id": "20240510000000123",
+    "date": "2024-05-10",
+    "invoice": "INV-2024-6654",
+    "rep": "Caroline Njeri",
+    "facility": "AAR Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.783448"
+  },
+  {
+    "id": "20240510000000248",
+    "date": "2024-05-10",
+    "invoice": "INV-2024-8609",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.784988"
+  },
+  {
+    "id": "20240511000000117",
+    "date": "2024-05-11",
+    "invoice": "INV-2024-2989",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.783388"
+  },
+  {
+    "id": "20240515000000271",
+    "date": "2024-05-15",
+    "invoice": "INV-2024-6194",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.785269"
+  },
+  {
+    "id": "20240520000000187",
+    "date": "2024-05-20",
+    "invoice": "INV-2024-8601",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.784167"
+  },
+  {
+    "id": "2024052100000088",
+    "date": "2024-05-21",
+    "invoice": "INV-2024-6325",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Ankle Replacement",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.782983"
+  },
+  {
+    "id": "20240522000000113",
+    "date": "2024-05-22",
+    "invoice": "INV-2024-5722",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.783342"
+  },
+  {
+    "id": "20240523000000224",
+    "date": "2024-05-23",
+    "invoice": "INV-2024-9151",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Ankle Replacement",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.784647"
+  },
+  {
+    "id": "2024052600000011",
+    "date": "2024-05-26",
+    "invoice": "INV-2024-7482",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.782014"
+  },
+  {
+    "id": "20240529000000324",
+    "date": "2024-05-29",
+    "invoice": "INV-2024-8054",
+    "rep": "James Mwangi",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.785912"
+  },
+  {
+    "id": "2024060300000018",
+    "date": "2024-06-03",
+    "invoice": "INV-2024-4258",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.782107"
+  },
+  {
+    "id": "20240604000000236",
+    "date": "2024-06-04",
+    "invoice": "INV-2024-4673",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.784771"
+  },
+  {
+    "id": "2024060500000013",
+    "date": "2024-06-05",
+    "invoice": "INV-2024-9085",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.782037"
+  },
+  {
+    "id": "2024060500000053",
+    "date": "2024-06-05",
+    "invoice": "INV-2024-7548",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.782515"
+  },
+  {
+    "id": "20240605000000262",
+    "date": "2024-06-05",
+    "invoice": "INV-2024-9721",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.785143"
+  },
+  {
+    "id": "2024060700000055",
+    "date": "2024-06-07",
+    "invoice": "INV-2024-2894",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.782541"
+  },
+  {
+    "id": "20240609000000207",
+    "date": "2024-06-09",
+    "invoice": "INV-2024-3414",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.784454"
+  },
+  {
+    "id": "20240609000000315",
+    "date": "2024-06-09",
+    "invoice": "INV-2024-9147",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.785790"
+  },
+  {
+    "id": "20240611000000214",
+    "date": "2024-06-11",
+    "invoice": "INV-2024-4963",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.784527"
+  },
+  {
+    "id": "20240613000000240",
+    "date": "2024-06-13",
+    "invoice": "INV-2024-6644",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.784827"
+  },
+  {
+    "id": "20240616000000292",
+    "date": "2024-06-16",
+    "invoice": "INV-2024-8239",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.785549"
+  },
+  {
+    "id": "2024062400000022",
+    "date": "2024-06-24",
+    "invoice": "INV-2024-7932",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.782150"
+  },
+  {
+    "id": "20240624000000212",
+    "date": "2024-06-24",
+    "invoice": "INV-2024-7934",
+    "rep": "James Mwangi",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.784503"
+  },
+  {
+    "id": "2024062700000019",
+    "date": "2024-06-27",
+    "invoice": "INV-2024-1009",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.782117"
+  },
+  {
+    "id": "2024062700000035",
+    "date": "2024-06-27",
+    "invoice": "INV-2024-3579",
+    "rep": "Sharon Wanjiku",
+    "facility": "Nairobi Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.782328"
+  },
+  {
+    "id": "20240627000000142",
+    "date": "2024-06-27",
+    "invoice": "INV-2024-9221",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.783656"
+  },
+  {
+    "id": "20240627000000162",
+    "date": "2024-06-27",
+    "invoice": "INV-2024-5831",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.783876"
+  },
+  {
+    "id": "20240628000000323",
+    "date": "2024-06-28",
+    "invoice": "INV-2024-7739",
+    "rep": "James Mwangi",
+    "facility": "Nakuru Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.785898"
+  },
+  {
+    "id": "2024070500000012",
+    "date": "2024-07-05",
+    "invoice": "INV-2024-5304",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.782024"
+  },
+  {
+    "id": "2024070500000086",
+    "date": "2024-07-05",
+    "invoice": "INV-2024-8921",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Proximal Femur Replacement",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "None",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.782959"
+  },
+  {
+    "id": "20240705000000274",
+    "date": "2024-07-05",
+    "invoice": "INV-2024-5442",
+    "rep": "Sharon Wanjiku",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Southern Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.785324"
+  },
+  {
+    "id": "20240707000000332",
+    "date": "2024-07-07",
+    "invoice": "INV-2024-6435",
+    "rep": "Faith Otieno",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.785994"
+  },
+  {
+    "id": "20240708000000296",
+    "date": "2024-07-08",
+    "invoice": "INV-2024-1987",
+    "rep": "Caroline Njeri",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Middle East",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.785588"
+  },
+  {
+    "id": "2024070900000034",
+    "date": "2024-07-09",
+    "invoice": "INV-2024-1998",
+    "rep": "Brian Koech",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "None",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.782318"
+  },
+  {
+    "id": "20240709000000320",
+    "date": "2024-07-09",
+    "invoice": "INV-2024-1962",
+    "rep": "Brian Koech",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.785846"
+  },
+  {
+    "id": "20240711000000106",
+    "date": "2024-07-11",
+    "invoice": "INV-2024-4683",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.783229"
+  },
+  {
+    "id": "20240713000000219",
+    "date": "2024-07-13",
+    "invoice": "INV-2024-6546",
+    "rep": "Caroline Njeri",
+    "facility": "AAR Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.784597"
+  },
+  {
+    "id": "2024071500000067",
+    "date": "2024-07-15",
+    "invoice": "INV-2024-8305",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Ankle Replacement",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.782763"
+  },
+  {
+    "id": "20240717000000235",
+    "date": "2024-07-17",
+    "invoice": "INV-2024-9882",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.784761"
+  },
+  {
+    "id": "20240717000000349",
+    "date": "2024-07-17",
+    "invoice": "INV-2024-1440",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.786239"
+  },
+  {
+    "id": "2024072000000015",
+    "date": "2024-07-20",
+    "invoice": "INV-2024-1188",
+    "rep": "Caroline Njeri",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Middle East",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.782063"
+  },
+  {
+    "id": "2024072000000097",
+    "date": "2024-07-20",
+    "invoice": "INV-2024-5786",
+    "rep": "James Mwangi",
+    "facility": "Nakuru Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.783092"
+  },
+  {
+    "id": "20240720000000317",
+    "date": "2024-07-20",
+    "invoice": "INV-2024-7841",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.785815"
+  },
+  {
+    "id": "20240724000000144",
+    "date": "2024-07-24",
+    "invoice": "INV-2024-6992",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.783678"
+  },
+  {
+    "id": "20240724000000339",
+    "date": "2024-07-24",
+    "invoice": "INV-2024-9395",
+    "rep": "Dennis Kiplangat",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.786066"
+  },
+  {
+    "id": "20240725000000195",
+    "date": "2024-07-25",
+    "invoice": "INV-2024-7333",
+    "rep": "Caroline Njeri",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Middle East",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.784292"
+  },
+  {
+    "id": "20240726000000294",
+    "date": "2024-07-26",
+    "invoice": "INV-2024-8575",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "None",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.785569"
+  },
+  {
+    "id": "20240729000000232",
+    "date": "2024-07-29",
+    "invoice": "INV-2024-2929",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.784730"
+  },
+  {
+    "id": "20240729000000309",
+    "date": "2024-07-29",
+    "invoice": "INV-2024-7761",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.785731"
+  },
+  {
+    "id": "2024073000000039",
+    "date": "2024-07-30",
+    "invoice": "INV-2024-2638",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Total Hip Replacement"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.782370"
+  },
+  {
+    "id": "20240731000000330",
+    "date": "2024-07-31",
+    "invoice": "INV-2024-1539",
+    "rep": "Dennis Kiplangat",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "East Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.785974"
+  },
+  {
+    "id": "20240804000000280",
+    "date": "2024-08-04",
+    "invoice": "INV-2024-2758",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.785386"
+  },
+  {
+    "id": "20240807000000204",
+    "date": "2024-08-07",
+    "invoice": "INV-2024-8218",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.784418"
+  },
+  {
+    "id": "2024081000000098",
+    "date": "2024-08-10",
+    "invoice": "INV-2024-5658",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.783102"
+  },
+  {
+    "id": "20240810000000181",
+    "date": "2024-08-10",
+    "invoice": "INV-2024-7626",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "None",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.784088"
+  },
+  {
+    "id": "2024081600000060",
+    "date": "2024-08-16",
+    "invoice": "INV-2024-6279",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.782593"
+  },
+  {
+    "id": "20240820000000254",
+    "date": "2024-08-20",
+    "invoice": "INV-2024-6781",
+    "rep": "James Mwangi",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Proximal Femur Replacement",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.785046"
+  },
+  {
+    "id": "2024090200000089",
+    "date": "2024-09-02",
+    "invoice": "INV-2024-5526",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.782992"
+  },
+  {
+    "id": "20240903000000340",
+    "date": "2024-09-03",
+    "invoice": "INV-2024-6315",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.786080"
+  },
+  {
+    "id": "20240904000000109",
+    "date": "2024-09-04",
+    "invoice": "INV-2024-1653",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.783271"
+  },
+  {
+    "id": "20240908000000225",
+    "date": "2024-09-08",
+    "invoice": "INV-2024-3956",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.784657"
+  },
+  {
+    "id": "20240909000000346",
+    "date": "2024-09-09",
+    "invoice": "INV-2024-4290",
+    "rep": "Sharon Wanjiku",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Southern Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.786171"
+  },
+  {
+    "id": "202409100000004",
+    "date": "2024-09-10",
+    "invoice": "INV-2024-5333",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.781911"
+  },
+  {
+    "id": "2024091300000081",
+    "date": "2024-09-13",
+    "invoice": "INV-2024-2876",
+    "rep": "Caroline Njeri",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Middle East",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.782909"
+  },
+  {
+    "id": "20240916000000133",
+    "date": "2024-09-16",
+    "invoice": "INV-2024-7267",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.783563"
+  },
+  {
+    "id": "2024091700000063",
+    "date": "2024-09-17",
+    "invoice": "INV-2024-2193",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.782629"
+  },
+  {
+    "id": "20240918000000267",
+    "date": "2024-09-18",
+    "invoice": "INV-2024-8726",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.785227"
+  },
+  {
+    "id": "20240919000000261",
+    "date": "2024-09-19",
+    "invoice": "INV-2024-6218",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Proximal Femur Replacement",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.785133"
+  },
+  {
+    "id": "20240920000000334",
+    "date": "2024-09-20",
+    "invoice": "INV-2024-7499",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "None",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.786016"
+  },
+  {
+    "id": "20240922000000150",
+    "date": "2024-09-22",
+    "invoice": "INV-2024-7686",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.783753"
+  },
+  {
+    "id": "20240926000000265",
+    "date": "2024-09-26",
+    "invoice": "INV-2024-7229",
+    "rep": "James Mwangi",
+    "facility": "Nakuru Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.785173"
+  },
+  {
+    "id": "20240927000000345",
+    "date": "2024-09-27",
+    "invoice": "INV-2024-7224",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.786153"
+  },
+  {
+    "id": "20241004000000140",
+    "date": "2024-10-04",
+    "invoice": "INV-2024-1645",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.783636"
+  },
+  {
+    "id": "20241011000000337",
+    "date": "2024-10-11",
+    "invoice": "INV-2024-3527",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.786047"
+  },
+  {
+    "id": "202410120000007",
+    "date": "2024-10-12",
+    "invoice": "INV-2024-6977",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.781948"
+  },
+  {
+    "id": "20241012000000243",
+    "date": "2024-10-12",
+    "invoice": "INV-2024-5496",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.784931"
+  },
+  {
+    "id": "2024101400000045",
+    "date": "2024-10-14",
+    "invoice": "INV-2024-5291",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.782432"
+  },
+  {
+    "id": "20241015000000134",
+    "date": "2024-10-15",
+    "invoice": "INV-2024-5161",
+    "rep": "Caroline Njeri",
+    "facility": "AAR Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.783573"
+  },
+  {
+    "id": "20241016000000288",
+    "date": "2024-10-16",
+    "invoice": "INV-2024-5833",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Proximal Femur Replacement",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.785504"
+  },
+  {
+    "id": "2024102300000028",
+    "date": "2024-10-23",
+    "invoice": "INV-2024-2612",
+    "rep": "Sharon Wanjiku",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Southern Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Ankle Replacement",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.782253"
+  },
+  {
+    "id": "20241024000000310",
+    "date": "2024-10-24",
+    "invoice": "INV-2024-2295",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.785741"
+  },
+  {
+    "id": "20241103000000218",
+    "date": "2024-11-03",
+    "invoice": "INV-2024-2698",
+    "rep": "James Mwangi",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.784587"
+  },
+  {
+    "id": "2024110500000027",
+    "date": "2024-11-05",
+    "invoice": "INV-2024-8062",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.782243"
+  },
+  {
+    "id": "2024110600000052",
+    "date": "2024-11-06",
+    "invoice": "INV-2024-4164",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.782505"
+  },
+  {
+    "id": "20241108000000175",
+    "date": "2024-11-08",
+    "invoice": "INV-2024-7947",
+    "rep": "James Mwangi",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.784014"
+  },
+  {
+    "id": "20241108000000298",
+    "date": "2024-11-08",
+    "invoice": "INV-2024-9835",
+    "rep": "Sharon Wanjiku",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Southern Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.785611"
+  },
+  {
+    "id": "20241109000000268",
+    "date": "2024-11-09",
+    "invoice": "INV-2024-8837",
+    "rep": "James Mwangi",
+    "facility": "Nakuru Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Proximal Femur Replacement",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.785239"
+  },
+  {
+    "id": "2024111000000042",
+    "date": "2024-11-10",
+    "invoice": "INV-2024-2697",
+    "rep": "Caroline Njeri",
+    "facility": "AAR Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Total Hip Replacement",
+      "Locking Plate"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.782401"
+  },
+  {
+    "id": "2024111000000057",
+    "date": "2024-11-10",
+    "invoice": "INV-2024-3041",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "None",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.782563"
+  },
+  {
+    "id": "20241110000000196",
+    "date": "2024-11-10",
+    "invoice": "INV-2024-3317",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.784302"
+  },
+  {
+    "id": "20241116000000275",
+    "date": "2024-11-16",
+    "invoice": "INV-2024-9700",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.785334"
+  },
+  {
+    "id": "20241120000000300",
+    "date": "2024-11-20",
+    "invoice": "INV-2024-9920",
+    "rep": "Brian Koech",
+    "facility": "Thika Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Total Hip Replacement"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.785630"
+  },
+  {
+    "id": "20241121000000110",
+    "date": "2024-11-21",
+    "invoice": "INV-2024-1339",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Total Hip Replacement"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.783288"
+  },
+  {
+    "id": "2024112200000036",
+    "date": "2024-11-22",
+    "invoice": "INV-2024-4853",
+    "rep": "James Mwangi",
+    "facility": "Nakuru Level 5 Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "None",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.782338"
+  },
+  {
+    "id": "20241123000000272",
+    "date": "2024-11-23",
+    "invoice": "INV-2024-9899",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.785289"
+  },
+  {
+    "id": "20241124000000135",
+    "date": "2024-11-24",
+    "invoice": "INV-2024-9955",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.783583"
+  },
+  {
+    "id": "20241127000000258",
+    "date": "2024-11-27",
+    "invoice": "INV-2024-2946",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.785097"
+  },
+  {
+    "id": "20241127000000290",
+    "date": "2024-11-27",
+    "invoice": "INV-2024-2341",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.785529"
+  },
+  {
+    "id": "202411300000008",
+    "date": "2024-11-30",
+    "invoice": "INV-2024-2169",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.781963"
+  },
+  {
+    "id": "20241206000000108",
+    "date": "2024-12-06",
+    "invoice": "INV-2024-5982",
+    "rep": "Caroline Njeri",
+    "facility": "AAR Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.783254"
+  },
+  {
+    "id": "20241207000000136",
+    "date": "2024-12-07",
+    "invoice": "INV-2024-5097",
+    "rep": "Brian Koech",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.783593"
+  },
+  {
+    "id": "20241209000000329",
+    "date": "2024-12-09",
+    "invoice": "INV-2024-8790",
+    "rep": "Caroline Njeri",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Middle East",
+    "surgeon": "Dr. O. Simiyu",
+    "procedure": "Proximal Femur Replacement",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.785964"
+  },
+  {
+    "id": "20241211000000233",
+    "date": "2024-12-11",
+    "invoice": "INV-2024-9047",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "Ankle Replacement",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "None",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.784741"
+  },
+  {
+    "id": "20241212000000347",
+    "date": "2024-12-12",
+    "invoice": "INV-2024-9044",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.786205"
+  },
+  {
+    "id": "2024121300000065",
+    "date": "2024-12-13",
+    "invoice": "INV-2024-9486",
+    "rep": "James Mwangi",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.782659"
+  },
+  {
+    "id": "2024121400000033",
+    "date": "2024-12-14",
+    "invoice": "INV-2024-8973",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.782308"
+  },
+  {
+    "id": "20241214000000149",
+    "date": "2024-12-14",
+    "invoice": "INV-2024-9850",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Ankle Replacement",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.783743"
+  },
+  {
+    "id": "20241220000000171",
+    "date": "2024-12-20",
+    "invoice": "INV-2024-6062",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Total Hip Replacement"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Minor feedback on instrument labelling \u2014 will relay to product team.",
+    "logged_at": "2026-04-23T06:50:13.783972"
+  },
+  {
+    "id": "2024122100000041",
+    "date": "2024-12-21",
+    "invoice": "INV-2024-5956",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.782392"
+  },
+  {
+    "id": "20241227000000242",
+    "date": "2024-12-27",
+    "invoice": "INV-2024-4694",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.784921"
+  },
+  {
+    "id": "20241230000000331",
+    "date": "2024-12-30",
+    "invoice": "INV-2024-7525",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.785983"
+  },
+  {
+    "id": "2024123100000069",
+    "date": "2024-12-31",
+    "invoice": "INV-2024-5681",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.782783"
+  },
+  {
+    "id": "20241231000000234",
+    "date": "2024-12-31",
+    "invoice": "INV-2024-8292",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.784751"
+  },
+  {
+    "id": "20241231000000260",
+    "date": "2024-12-31",
+    "invoice": "INV-2024-6456",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.785122"
+  },
+  {
+    "id": "20250105000000129",
+    "date": "2025-01-05",
+    "invoice": "INV-2025-8994",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.783515"
+  },
+  {
+    "id": "2025010600000017",
+    "date": "2025-01-06",
+    "invoice": "INV-2025-5315",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Ankle Replacement",
+    "implants": [
+      "Total Hip Replacement"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.782096"
+  },
+  {
+    "id": "20250108000000252",
+    "date": "2025-01-08",
+    "invoice": "INV-2025-6123",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.785027"
+  },
+  {
+    "id": "20250110000000286",
+    "date": "2025-01-10",
+    "invoice": "INV-2025-1187",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.785466"
+  },
+  {
+    "id": "20250112000000341",
+    "date": "2025-01-12",
+    "invoice": "INV-2025-4977",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Humeral Nail Fixation",
+    "implants": [
+      "Humeral Nail"
+    ],
+    "challenges": "Cortical breach during screw insertion \u2014 managed",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.786096"
+  },
+  {
+    "id": "20250114000000159",
+    "date": "2025-01-14",
+    "invoice": "INV-2025-9543",
+    "rep": "Caroline Njeri",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "Middle East",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Proximal Femur Replacement",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "None",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.783846"
+  },
+  {
+    "id": "20250114000000227",
+    "date": "2025-01-14",
+    "invoice": "INV-2025-6776",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Ankle Replacement",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.784678"
+  },
+  {
+    "id": "20250117000000164",
+    "date": "2025-01-17",
+    "invoice": "INV-2025-2557",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "External Fixator"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.783898"
+  },
+  {
+    "id": "20250120000000319",
+    "date": "2025-01-20",
+    "invoice": "INV-2025-6770",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.785835"
+  },
+  {
+    "id": "20250122000000306",
+    "date": "2025-01-22",
+    "invoice": "INV-2025-3869",
+    "rep": "Grace Auma",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.785699"
+  },
+  {
+    "id": "202501240000000",
+    "date": "2025-01-24",
+    "invoice": "INV-2025-2679",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "DHS Plate Fixation",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.781849"
+  },
+  {
+    "id": "20250126000000198",
+    "date": "2025-01-26",
+    "invoice": "INV-2025-9624",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.784324"
+  },
+  {
+    "id": "20250129000000157",
+    "date": "2025-01-29",
+    "invoice": "INV-2025-7897",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.783827"
+  },
+  {
+    "id": "20250129000000180",
+    "date": "2025-01-29",
+    "invoice": "INV-2025-1693",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Revision Knee Tibial"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.784078"
+  },
+  {
+    "id": "2025013000000094",
+    "date": "2025-01-30",
+    "invoice": "INV-2025-9779",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Femoral Nail"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.783041"
+  },
+  {
+    "id": "20250202000000295",
+    "date": "2025-02-02",
+    "invoice": "INV-2025-4570",
+    "rep": "Dennis Kiplangat",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.785579"
+  },
+  {
+    "id": "2025021000000031",
+    "date": "2025-02-10",
+    "invoice": "INV-2025-4872",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Total Hip Replacement"
+    ],
+    "challenges": "Intraoperative bleeding managed with cautery",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.782287"
+  },
+  {
+    "id": "20250210000000222",
+    "date": "2025-02-10",
+    "invoice": "INV-2025-4131",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Surgeon very satisfied with implant fit and instrumentation.",
+    "logged_at": "2026-04-23T06:50:13.784627"
+  },
+  {
+    "id": "20250212000000259",
+    "date": "2025-02-12",
+    "invoice": "INV-2025-3363",
+    "rep": "Brian Koech",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. G. Kipchoge",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.785112"
+  },
+  {
+    "id": "20250214000000283",
+    "date": "2025-02-14",
+    "invoice": "INV-2025-4164",
+    "rep": "Brian Koech",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. L. Rotich",
+    "procedure": "ACL Reconstruction",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "None",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.785415"
+  },
+  {
+    "id": "2025021700000095",
+    "date": "2025-02-17",
+    "invoice": "INV-2025-9595",
+    "rep": "Brian Koech",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "External Fixator Application",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.783057"
+  },
+  {
+    "id": "2025022700000072",
+    "date": "2025-02-27",
+    "invoice": "INV-2025-1320",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. A. Kimani",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.782813"
+  },
+  {
+    "id": "20250228000000202",
+    "date": "2025-02-28",
+    "invoice": "INV-2025-3712",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. C. Waweru",
+    "procedure": "Spinal Fusion L5-S1",
+    "implants": [
+      "Tibial Nail"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Good overall. Recommended adding one more size to tray.",
+    "logged_at": "2026-04-23T06:50:13.784384"
+  },
+  {
+    "id": "20250304000000194",
+    "date": "2025-03-04",
+    "invoice": "INV-2025-6543",
+    "rep": "Moses Odhiambo",
+    "facility": "Kisumu County Referral",
+    "region": "Central Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Revision Hip Replacement",
+    "implants": [
+      "ACL Graft"
+    ],
+    "challenges": "Cement pressurisation required extra time",
+    "feedback": "Surgeon neutral \u2014 outcome acceptable, no concerns raised.",
+    "logged_at": "2026-04-23T06:50:13.784282"
+  },
+  {
+    "id": "20250305000000185",
+    "date": "2025-03-05",
+    "invoice": "INV-2025-6724",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.784129"
+  },
+  {
+    "id": "20250305000000314",
+    "date": "2025-03-05",
+    "invoice": "INV-2025-5637",
+    "rep": "Caroline Njeri",
+    "facility": "AAR Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "DHS Plate"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.785781"
+  },
+  {
+    "id": "20250308000000184",
+    "date": "2025-03-08",
+    "invoice": "INV-2025-3754",
+    "rep": "Faith Otieno",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.784118"
+  },
+  {
+    "id": "20250312000000264",
+    "date": "2025-03-12",
+    "invoice": "INV-2025-4728",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. M. Abdi",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Smooth case. Surgeon likely to use this system again.",
+    "logged_at": "2026-04-23T06:50:13.785163"
+  },
+  {
+    "id": "20250316000000216",
+    "date": "2025-03-16",
+    "invoice": "INV-2025-9316",
+    "rep": "Faith Otieno",
+    "facility": "AAR Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Fluoroscopy positioning required multiple attempts",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.784563"
+  },
+  {
+    "id": "20250319000000156",
+    "date": "2025-03-19",
+    "invoice": "INV-2025-4898",
+    "rep": "Dennis Kiplangat",
+    "facility": "Aga Khan Hospital Nairobi",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.783815"
+  },
+  {
+    "id": "20250320000000101",
+    "date": "2025-03-20",
+    "invoice": "INV-2025-4697",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "None",
+    "feedback": "Theatre staff appreciated rep's preparation and knowledge.",
+    "logged_at": "2026-04-23T06:50:13.783144"
+  },
+  {
+    "id": "2025032200000014",
+    "date": "2025-03-22",
+    "invoice": "INV-2025-7916",
+    "rep": "Faith Otieno",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Spinal Fusion Cage",
+      "Pedicle Screws"
+    ],
+    "challenges": "Mild intraoperative hypotension \u2014 anaesthesia adjusted",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.782047"
+  },
+  {
+    "id": "20250322000000107",
+    "date": "2025-03-22",
+    "invoice": "INV-2025-6039",
+    "rep": "Brian Koech",
+    "facility": "Eldoret Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Spinal Fusion L4-L5",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.783241"
+  },
+  {
+    "id": "20250325000000350",
+    "date": "2025-03-25",
+    "invoice": "INV-2025-7703",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Limited range of motion post-insertion, revised positioning",
+    "feedback": "Surgeon noted faster surgical time compared to previous system.",
+    "logged_at": "2026-04-23T06:50:13.786249"
+  },
+  {
+    "id": "2025032600000061",
+    "date": "2025-03-26",
+    "invoice": "INV-2025-3780",
+    "rep": "Lydia Chebet",
+    "facility": "Kenyatta National Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Tibial Nail Fixation",
+    "implants": [
+      "Pedicle Screws",
+      "Spinal Fusion Cage"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.782602"
+  },
+  {
+    "id": "20250329000000223",
+    "date": "2025-03-29",
+    "invoice": "INV-2025-7029",
+    "rep": "Dennis Kiplangat",
+    "facility": "MP Shah Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. N. Kamau",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Revision Hip Stem"
+    ],
+    "challenges": "Patient BMI >40 posed exposure challenges",
+    "feedback": "Excellent outcome. Surgeon requests same implant for next case.",
+    "logged_at": "2026-04-23T06:50:13.784637"
+  },
+  {
+    "id": "2025033100000066",
+    "date": "2025-03-31",
+    "invoice": "INV-2025-8612",
+    "rep": "Lydia Chebet",
+    "facility": "Moi Teaching & Referral Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. I. Wambua",
+    "procedure": "Femoral Nail Fixation",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.782672"
+  },
+  {
+    "id": "20250331000000182",
+    "date": "2025-03-31",
+    "invoice": "INV-2025-8538",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. B. Otieno",
+    "procedure": "Revision Knee Replacement",
+    "implants": [
+      "Total Hip Replacement"
+    ],
+    "challenges": "Instrument set arrived late \u2014 minor delay",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.784098"
+  },
+  {
+    "id": "2025040500000056",
+    "date": "2025-04-05",
+    "invoice": "INV-2025-9821",
+    "rep": "Paul Mutua",
+    "facility": "Coast General Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. E. Achieng",
+    "procedure": "Total Knee Replacement",
+    "implants": [
+      "Ankle Replacement"
+    ],
+    "challenges": "None \u2014 procedure went smoothly",
+    "feedback": "Surgeon happy with revision components. Follow-up in 6 weeks.",
+    "logged_at": "2026-04-23T06:50:13.782551"
+  },
+  {
+    "id": "2025040600000020",
+    "date": "2025-04-06",
+    "invoice": "INV-2025-6038",
+    "rep": "Caroline Njeri",
+    "facility": "Nairobi Hospital",
+    "region": "Middle East",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Total Hip Replacement",
+    "implants": [
+      "Shoulder Arthroplasty"
+    ],
+    "challenges": "Poor bone quality \u2014 augmented fixation used",
+    "feedback": "Very positive. Facility requested product demo for upcoming cases.",
+    "logged_at": "2026-04-23T06:50:13.782127"
+  },
+  {
+    "id": "20250406000000170",
+    "date": "2025-04-06",
+    "invoice": "INV-2025-8030",
+    "rep": "Sharon Wanjiku",
+    "facility": "MP Shah Hospital",
+    "region": "Southern Africa",
+    "surgeon": "Dr. F. Njenga",
+    "procedure": "Shoulder Arthroplasty",
+    "implants": [
+      "Locking Plate"
+    ],
+    "challenges": "None",
+    "feedback": "Surgeon satisfied. Rep performance praised by theatre team.",
+    "logged_at": "2026-04-23T06:50:13.783961"
+  },
+  {
+    "id": "20250406000000247",
+    "date": "2025-04-06",
+    "invoice": "INV-2025-7653",
+    "rep": "Moses Odhiambo",
+    "facility": "Coast General Hospital",
+    "region": "Central Africa",
+    "surgeon": "Dr. K. Maina",
+    "procedure": "Locking Plate Fixation",
+    "implants": [
+      "Locking Plate",
+      "DHS Plate"
+    ],
+    "challenges": "Component sizing required adjustment intraoperatively",
+    "feedback": "Excellent. Facility considering preferred supplier agreement.",
+    "logged_at": "2026-04-23T06:50:13.784978"
+  },
+  {
+    "id": "20250409000000191",
+    "date": "2025-04-09",
+    "invoice": "INV-2025-4084",
+    "rep": "Paul Mutua",
+    "facility": "Mombasa Hospital",
+    "region": "West Africa",
+    "surgeon": "Dr. J. Chege",
+    "procedure": "Wrist Arthroplasty",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Scar tissue from prior surgery slowed dissection",
+    "feedback": "Positive. Case completed within scheduled theatre time.",
+    "logged_at": "2026-04-23T06:50:13.784247"
+  },
+  {
+    "id": "20250410000000100",
+    "date": "2025-04-10",
+    "invoice": "INV-2025-5978",
+    "rep": "Faith Otieno",
+    "facility": "Nairobi Hospital",
+    "region": "East Africa",
+    "surgeon": "Dr. H. Omondi",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Total Knee Replacement"
+    ],
+    "challenges": "Difficult anatomy due to prior fracture",
+    "feedback": "Good result. Some concern about instrument tray organisation.",
+    "logged_at": "2026-04-23T06:50:13.783126"
+  },
+  {
+    "id": "2025041500000021",
+    "date": "2025-04-15",
+    "invoice": "INV-2025-2133",
+    "rep": "Grace Auma",
+    "facility": "Kisumu County Referral",
+    "region": "East Africa",
+    "surgeon": "Dr. D. Mutai",
+    "procedure": "Partial Knee Replacement",
+    "implants": [
+      "Partial Knee"
+    ],
+    "challenges": "Implant sizing changed from pre-op plan",
+    "feedback": "Positive feedback. Patient stable in recovery.",
+    "logged_at": "2026-04-23T06:50:13.782140"
+  }
+]
